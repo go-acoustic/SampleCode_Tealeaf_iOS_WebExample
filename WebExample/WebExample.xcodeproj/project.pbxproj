@@ -492,7 +492,6 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../Tealeaf/Debug,
 					"$(PROJECT_DIR)/WebExample",
 				);
 				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
@@ -501,7 +500,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../EOCore/Debug",
 					"$(PROJECT_DIR)/WebExample",
 				);
 				ONLY_ACTIVE_ARCH = NO;
@@ -521,7 +519,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../Tealeaf/Debug,
 					"$(PROJECT_DIR)/WebExample",
 				);
 				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
@@ -530,7 +527,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../../EOCore/Debug",
 					"$(PROJECT_DIR)/WebExample",
 				);
 				ONLY_ACTIVE_ARCH = NO;
