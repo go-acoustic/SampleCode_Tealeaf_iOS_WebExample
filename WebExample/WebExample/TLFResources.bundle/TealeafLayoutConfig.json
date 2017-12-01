@@ -1,0 +1,47 @@
+{
+    "AutoLayout": {
+        "StartViewController": {
+            "do": true,
+            "screenViewName": "StartViewController",
+            "delay": 100,
+            "takeScreenShot": false,
+            "isWebView": false,
+            "numberOfWebviews": 0
+        },
+        "SingleWebPageViewController": {
+            "do": true,
+            "screenViewName": "SingleWebPageViewController",
+            "delay": 500,
+            "takeScreenShot": false,
+            "isWebView": true,
+            "numberOfWebviews": 1
+        },
+        "DoubleWebPageViewController": {
+            "do": true,
+            "screenViewName": "DoubleWebPageViewController",
+            "delay": 500,
+            "takeScreenShot": false,
+            "isWebView": true,
+            "numberOfWebviews": 2
+        },
+        "WEWKWebViewController": {
+            "do": true,
+            "screenViewName": "WEWKWebViewController",
+            "delay": 500,
+            "takeScreenShot": false,
+            "isWebView": true,
+            "numberOfWebviews": 1
+        }
+    },
+    "AppendMapIds": {
+        "[w,9290],[v,0]": {
+            "mid": "ASimpleUIView"
+        },
+        "tag2999999": {
+            "mid": "giveAdditionalId1"
+        },
+        "idxPathValue": {
+            "mid": "giveAdditionalId2"
+        }
+    }
+}
