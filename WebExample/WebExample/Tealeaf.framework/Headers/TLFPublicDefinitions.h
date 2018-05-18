@@ -117,6 +117,8 @@ extern NSString* kTLFMobileStateEvent;
 #define kConfigurableItemDisableKeyboardCapture             @"DisableKeyboardCapture"
 #define kConfigurableItemLogViewLayoutOnScreenTransitionAlerts @"webViewInjectionForDisabledLogViewLayout"
 #define kConfigurableItemEnableWebViewInjectionForDisabledAutoCapture  @"EnableWebViewInjectionForDisabledAutoCapture"
+#define kConfigurableItemDisableAlertAutoCapture  @"DisableAlertAutoCapture"
+#define kConfigurableItemDisableAlertBackgroundForDisabledLogViewLayout  @"DisableAlertBackgroundForDisabledLogViewLayout"
 
 // TLF Public Protocols
 @protocol TLFSavePrintScreenOperationDelegate <NSObject>
