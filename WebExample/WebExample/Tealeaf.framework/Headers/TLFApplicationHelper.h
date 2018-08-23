@@ -1,6 +1,6 @@
 //
 //  Licensed Materials - Property of IBM
-//  (C) Copyright IBM Corp. 2017
+//  (C) Copyright IBM Corp. 2018
 //  US Government Users Restricted Rights - Use, duplication or disclosure
 //  restricted by GSA ADP Schedule Contract with IBM Corp.
 //
@@ -28,6 +28,18 @@
  * @return Returns YES or NO based on whether the framework was successfully enabled or not.
  */
 - (BOOL)disableTealeafFramework;
+
+/*!
+ * @abstract Pauses capture of data on the Tealeaf framework
+ * @return Returns YES or NO based on whether the framework was successfully paused or not.
+ */
+- (BOOL)pauseTealeaf;
+
+/**
+ * @abstract Resumes capture of data on the Tealeaf framework
+ * @return Returns YES or NO based on whether the framework was successfully resumed or not.
+ */
+- (BOOL)resumeTealeaf;
 
 /**
  Setup the Kill Switch URL. This is the URL to be checked when the framework initializes. If the page is not reachable the framework will not initialize. Setting the URL will update the configurable plist file for that user's device.
