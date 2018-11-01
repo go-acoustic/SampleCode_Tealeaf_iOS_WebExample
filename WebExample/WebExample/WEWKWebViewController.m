@@ -35,9 +35,9 @@
 -(void)loadLocalFiles
 {
 #ifdef BRIDGE_API_TEST
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"indexWKWebViewTest" ofType:@"html" inDirectory:@"/mobile_domcap/" ];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"indexWKWebViewTest" ofType:@"html" inDirectory:@"mobile_domcap/" ];
 #else
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"embeddedGesturesMenu" ofType:@"html" inDirectory:@"/mobile_domcap/" ];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"embeddedGesturesMenu" ofType:@"html" inDirectory:@"mobile_domcap/" ];
 #endif
     if (path)
     {

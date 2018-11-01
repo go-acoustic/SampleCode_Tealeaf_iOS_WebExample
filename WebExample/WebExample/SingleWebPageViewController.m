@@ -33,7 +33,7 @@
 
 - (void)loadLocalFiles
 {
-	NSString *path = [[NSBundle mainBundle] pathForResource:@"embeddedGesturesMenu" ofType:@"html" inDirectory:@"/mobile_domcap/" ];
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"embeddedGesturesMenu" ofType:@"html" inDirectory:@"mobile_domcap/" ];
 	if (path)
 	{
 		NSURL *url = [NSURL fileURLWithPath:path];

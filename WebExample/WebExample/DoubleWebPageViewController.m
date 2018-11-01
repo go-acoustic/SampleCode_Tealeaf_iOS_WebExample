@@ -40,7 +40,7 @@
 
 - (void)loadLocalFiles
 {
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"embeddedGesturesMenu" ofType:@"html" inDirectory:@"/mobile_domcap/"]];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"embeddedGesturesMenu" ofType:@"html" inDirectory:@"mobile_domcap/"]];
     NSURLRequest *request1 = [NSURLRequest requestWithURL:url];
     [_webView1 loadRequest:request1];
     NSURLRequest *request2 = [NSURLRequest requestWithURL:url];
