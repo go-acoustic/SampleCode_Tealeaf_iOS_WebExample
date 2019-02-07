@@ -1,12 +1,12 @@
 /**
  * Licensed Materials - Property of IBM
- * © Copyright IBM Corp. 2017
+ * � Copyright IBM Corp. 2018
  * US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
  */
 
 /**
  * @fileOverview The Gesture module implements the logic for capturing Hammer.js gesture events.
- * @version 5.4.0.1805
+ * @version 5.5.0.1814
  * @exports gesture
  */
 
@@ -49,6 +49,7 @@ TLT.addModule("gestures", function (context) {
               tapCount = 0,
               swipeOk = true,
               timer,
+              curriedTap = function () {},
               gestureOptions = {
               swipeAfterPinchInterval: 300,
               doubleTapInterval: 300,
@@ -407,6 +408,23 @@ TLT.addModule("gestures", function (context) {
               }
               
               /**
+               * Higher order function that stores elementId and webEvent of
+               * the latest tap event and returns a function with these values preset,
+               * callable from inside a setTimeout or outside
+               * @private
+               * @param {string} id ID of the target the event is fired on.
+               * @param {obj} webEvent the event object.
+               */
+              function createCurriedTap(id, webEvent) {
+              var curriedId = id,
+              curriedWebEvent = webEvent;
+              return function () {
+              handleGesture(curriedId, curriedWebEvent);
+              tapCount = 0;
+              };
+              }
+              
+              /**
                * Specially handles the tap gesture event
                * @private
                * @param {string} id ID of the target the event is fired on.
@@ -419,19 +437,28 @@ TLT.addModule("gestures", function (context) {
               tapCount += 1;
               
               if (tapCount === 1) {
+              curriedTap = createCurriedTap(id, webEvent);
               timer = setTimeout(function () {
-                                 handleGesture(id, webEvent);
-                                 //Reset the tap count after the specified delay
-                                 tapCount = 0;
+                                 curriedTap();
+                                 curriedTap = function () {};
                                  }, doubleTapInterval);
               } else {
               clearTimeout(timer);
               //Change the tap into a doubletap
               webEvent.type = "doubletap";
               handleGesture(id, webEvent);
+              curriedTap = function () {};
               //Reset the tap count after a doubletap
               tapCount = 0;
               }
+              }
+              
+              /**
+               * Flushes out any queued taps on unload event
+               **/
+              function handleQueuedTapOnUnload() {
+              clearTimeout(timer);
+              curriedTap();
               }
               
               /**
@@ -671,12 +698,12 @@ TLT.addModule("gestures", function (context) {
               position;
               
               // Sanity checks
-              if (typeof webEvent !== "object" || !webEvent.type || !webEvent.gesture || !webEvent.target) {
+              if (typeof webEvent !== "object" || !webEvent.type || (!webEvent.gesture && !webEvent.type === "unload") || !webEvent.target) {
               return;
               }
               //Find the position of the element in elementArray to find the corresponding gesture option object
               position = utils.indexOf(elementArray, webEvent.target.element);
-              if (webEvent.gesture.pointerType === "mouse" && gestureOptions.preventMouse) {
+              if (webEvent.type !== "unload" && webEvent.gesture.pointerType === "mouse" && gestureOptions.preventMouse) {
               return;
               }
               
@@ -704,8 +731,13 @@ TLT.addModule("gestures", function (context) {
               case "release":
               handleGesture(id, webEvent);
               break;
+              case "unload":
+              handleQueuedTapOnUnload();
+              break;
               }
               }
               };
               
               });
+
+

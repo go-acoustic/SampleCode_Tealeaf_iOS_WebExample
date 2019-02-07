@@ -49,7 +49,16 @@
             { name: "scroll", target: window},
            // { name: "orientationchange", target: window},
             { name: "touchend" },
-            { name: "touchstart" }
+            { name: "touchstart" },
+            { "name": "loadWithFrames"},
+            { "name": "customIEEvent",
+                   "state": "detail" ,
+                   "recurseFrames": true
+                   },
+                   { "name": "Login",
+                   "state": "detail",
+                   "recurseFrames": true
+                   }
           ]
         },
         TLCookie: {
@@ -123,7 +132,7 @@
         }
       },
       domCapture: {
-        diffEnabled: false,
+        diffEnabled: true,
         // DOM Capture options
         options: {
           maxMutations: 100,       // If this threshold is met or exceeded, a full DOM is captured instead of a diff.
@@ -170,42 +179,32 @@
           loadEventEnd: true
         }
       },
-      replay: {
-        // Geolocation configuration
-        geolocation: {
-          enabled: false,
-          triggers: [
-            {
-              event: "load"
-            }
-          ]
-        },
-        // DOM Capture configuration
-        domCapture: {
-          /**
-          * NOTE: Enabling DOM Capture has significant implications on data transmission and infrastructure.
-          * Hence this feature should be enabled judiciously. If enabled, it requires further configuration
-          * to only perform the DOM Capture based on specific events and elements. Please refer to the
-          * documentation for more details.
-          */
-          enabled: true,
-          /**
-          * The rules for triggering DOM Snapshots are similar to the Privacy configuration.
-          * It accepts a mandatory "event" followed by one or more optional targets
-          * as well as an optional delay after which to take the DOM snapshot.
-          *
-          * The default configuration below will capture a full DOM snapshot for each and every click, change
-          * action as well as for all screenview load and unloads. Please refer to the documentation for
-          * details on fine tuning this configuration to specific elements and screenviews.
-          */
-          triggers: [
-            {
-              event: "load",
-              delay: 1000
-            }
-          ]
-        }
-      },
+        "replay": {
+        "domCapture": {
+        "enabled": true,
+        "triggers": [
+                    {
+                               "event": "load"
+                               },
+                               {
+                               "event": "click"
+                     
+                               },
+                               {
+                               "event": "change"
+                               },
+                               {
+                               "event": "unload"
+                     
+                               },
+                               {
+                               "event": "Login",
+                     
+                               }
+                     
+                               ]
+                  }
+                  },
       TLCookie: {
         enabled: false
       }
