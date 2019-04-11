@@ -1,6 +1,6 @@
 //
 //  Licensed Materials - Property of IBM
-//  (C) Copyright IBM Corp. 2018
+//  (C) Copyright IBM Corp. 2019
 //  US Government Users Restricted Rights - Use, duplication or disclosure
 //  restricted by GSA ADP Schedule Contract with IBM Corp.
 //
@@ -113,8 +113,6 @@ extern NSString* kTLFMobileStateEvent;
 #define kConfigurableItemRemoveIp                                           @"RemoveIp"
 #define kConfigurableItemIpPlaceholder                                      @"IpPlaceholder"
 #define kConfigurableItemUseJPGForReplayImagesExtension                     @"UseJPGForReplayImagesExtension"
-#define kConfigurableItemAutoWebViewCaptureDelay                            @"AutoWebViewCaptureDelay"
-#define kConfigurableItemDefaultAutoLayoutDelay                             @"DefaultAutoLayoutDelay"
 #define kConfigurableItemDisableKeyboardCapture                             @"DisableKeyboardCapture"
 #define kConfigurableItemEnableWebViewInjectionForDisabledAutoCapture       @"EnableWebViewInjectionForDisabledAutoCapture"
 #define kConfigurableItemDisableAlertAutoCapture                            @"DisableAlertAutoCapture"  
