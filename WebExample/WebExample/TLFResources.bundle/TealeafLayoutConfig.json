@@ -1,36 +1,26 @@
 {
     "AutoLayout": {
-        "StartViewController": {
-            "do": true,
-            "screenViewName": "StartViewController",
-            "delay": 100,
-            "takeScreenShot": false,
-            "isWebView": false,
-            "numberOfWebviews": 0
-        },
-        "SingleWebPageViewController": {
-            "do": true,
-            "screenViewName": "SingleWebPageViewController",
-            "delay": 500,
-            "takeScreenShot": false,
-            "isWebView": true,
-            "numberOfWebviews": 1
-        },
-        "DoubleWebPageViewController": {
-            "do": true,
-            "screenViewName": "DoubleWebPageViewController",
-            "delay": 500,
-            "takeScreenShot": false,
-            "isWebView": true,
-            "numberOfWebviews": 2
+        "IBMGlobalScreenSettings":{
+            "ScreenChange": true,
+            "DisplayName": "",
+            "CaptureLayoutDelay": 0,
+            "ScreenShot": false,
+            "NumberOfWebViews": 0,
+            "CaptureUserEvents": true,
+            "CaptureScreenVisits": false,
+            "CaptureLayoutOn": 2,
+            "CaptureScreenshotOn": 0
         },
         "WEWKWebViewController": {
-            "do": true,
-            "screenViewName": "WEWKWebViewController",
-            "delay": 500,
-            "takeScreenShot": false,
-            "isWebView": true,
-            "numberOfWebviews": 1
+            "ScreenChange": true,
+            "DisplayName": "WEWKWebViewController",
+            "CaptureLayoutDelay": 500,
+            "ScreenShot": false,
+            "NumberOfWebViews": 1,
+            "CaptureUserEvents": false,
+            "CaptureScreenVisits": false,
+            "CaptureLayoutOn": 2,
+            "CaptureScreenshotOn": 0
         }
     },
     "AppendMapIds": {
