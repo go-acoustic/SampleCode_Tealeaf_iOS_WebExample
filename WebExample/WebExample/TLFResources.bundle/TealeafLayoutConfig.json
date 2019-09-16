@@ -14,10 +14,10 @@
         "WEWKWebViewController": {
             "ScreenChange": true,
             "DisplayName": "WEWKWebViewController",
-            "CaptureLayoutDelay": 500,
+            "CaptureLayoutDelay": 0,
             "ScreenShot": false,
             "NumberOfWebViews": 1,
-            "CaptureUserEvents": false,
+            "CaptureUserEvents": true,
             "CaptureScreenVisits": false,
             "CaptureLayoutOn": 2,
             "CaptureScreenshotOn": 0

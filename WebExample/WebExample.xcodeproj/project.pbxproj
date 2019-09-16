@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1B2EA8BA730A00A3A8445B00 /* libPods-WebExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18450E9254CB0775FE8FCC /* libPods-WebExampleTests.a */; };
+		636B3A4C23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h in Headers */ = {isa = PBXBuildFile; fileRef = 636B3A4A23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h */; };
+		636B3A4D23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */; };
+		636B3A4E23303D4A007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */; };
 		63C82C502303568800743560 /* DoubleWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7D19E72E3500B74273 /* DoubleWebPageViewController.m */; };
 		63C82C512303568800743560 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1F48E1BDFE9E700672AFE /* StartViewController.m */; };
 		63C82C522303568800743560 /* WebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84EA3B1BE17D870028236C /* WebViewDelegate.m */; };
@@ -45,6 +48,7 @@
 		66B2F9A61FAA467500F52C99 /* Tealeaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681EBEC1F97C9BB0069D0F3 /* Tealeaf.framework */; };
 		66B2F9A71FAA467500F52C99 /* libEOCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681EBEB1F97C9BB0069D0F3 /* libEOCore.a */; };
 		8F1CBDE91D00880A00B9245E /* WebExampleSessionIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */; };
+		9F2B3956696B183C73BE98EF /* libPods-WebExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC89C1DBCF154310FBFBA750 /* libPods-WebExample.a */; };
 		AE84EA391BE179690028236C /* SingleWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84EA381BE179690028236C /* SingleWebPageViewController.m */; };
 		AE84EA3C1BE17D870028236C /* WebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84EA3B1BE17D870028236C /* WebViewDelegate.m */; };
 		AEA1F48F1BDFE9E700672AFE /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1F48E1BDFE9E700672AFE /* StartViewController.m */; };
@@ -66,6 +70,8 @@
 		03D20C94A8AC365E6F3A4C9C /* Pods-WebExampleP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExampleP.debug.xcconfig"; path = "Target Support Files/Pods-WebExampleP/Pods-WebExampleP.debug.xcconfig"; sourceTree = "<group>"; };
 		3A18450E9254CB0775FE8FCC /* libPods-WebExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D002840F13E88B9F7EA70B8 /* Pods-WebExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.release.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.release.xcconfig"; sourceTree = "<group>"; };
+		636B3A4A23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TealeafEarlyLoads.h"; sourceTree = "<group>"; };
+		636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TealeafEarlyLoads.m"; sourceTree = "<group>"; };
 		63C82C6F2303568800743560 /* WebExampleP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebExampleP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C82C702303568800743560 /* WebExampleP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WebExampleP-Info.plist"; path = "/Users/sdamale/dev/publicgit/SampleCode_Tealeaf_iOS_WebExample/WebExample/WebExampleP-Info.plist"; sourceTree = "<absolute>"; };
 		63FEDCAD1CD734B800679E41 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -137,6 +143,7 @@
 				66A0CCAD19E7397600B74273 /* UIKit.framework in Frameworks */,
 				66A0CCAB19E7396F00B74273 /* Foundation.framework in Frameworks */,
 				63FEDCAE1CD734B800679E41 /* WebKit.framework in Frameworks */,
+				9F2B3956696B183C73BE98EF /* libPods-WebExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +158,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		636B3A4F23304AA5007A3A19 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				636B3A4A23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h */,
+				636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
 		66A0CC6919E72E3400B74273 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +192,7 @@
 		66A0CC7419E72E3400B74273 /* WebExample */ = {
 			isa = PBXGroup;
 			children = (
+				636B3A4F23304AA5007A3A19 /* Sources */,
 				66EE37341E89CC0300656C64 /* TealeafSDK */,
 				66FD3A2F19EF209100917A97 /* Web */,
 				66A0CC7919E72E3400B74273 /* AppDelegate.h */,
@@ -294,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				668AFCCE1FAAAA1500936434 /* EOApplicationHelper.h in Headers */,
+				636B3A4C23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +574,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636B3A4E23303D4A007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */,
 				63C82C502303568800743560 /* DoubleWebPageViewController.m in Sources */,
 				63C82C512303568800743560 /* StartViewController.m in Sources */,
 				63C82C522303568800743560 /* WebViewDelegate.m in Sources */,
@@ -578,6 +597,7 @@
 				63FEDCB91CD73BC300679E41 /* WEWKWebViewController.m in Sources */,
 				AE84EA391BE179690028236C /* SingleWebPageViewController.m in Sources */,
 				66A0CC7B19E72E3400B74273 /* AppDelegate.m in Sources */,
+				636B3A4D23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */,
 				66A0CC7819E72E3400B74273 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
