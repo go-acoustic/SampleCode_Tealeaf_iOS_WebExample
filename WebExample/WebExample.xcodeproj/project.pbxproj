@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B2EA8BA730A00A3A8445B00 /* libPods-WebExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18450E9254CB0775FE8FCC /* libPods-WebExampleTests.a */; };
 		636B3A4C23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h in Headers */ = {isa = PBXBuildFile; fileRef = 636B3A4A23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h */; };
 		636B3A4D23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */; };
 		636B3A4E23303D4A007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */; };
@@ -48,7 +47,6 @@
 		66B2F9A61FAA467500F52C99 /* Tealeaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681EBEC1F97C9BB0069D0F3 /* Tealeaf.framework */; };
 		66B2F9A71FAA467500F52C99 /* libEOCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681EBEB1F97C9BB0069D0F3 /* libEOCore.a */; };
 		8F1CBDE91D00880A00B9245E /* WebExampleSessionIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */; };
-		9F2B3956696B183C73BE98EF /* libPods-WebExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC89C1DBCF154310FBFBA750 /* libPods-WebExample.a */; };
 		AE84EA391BE179690028236C /* SingleWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84EA381BE179690028236C /* SingleWebPageViewController.m */; };
 		AE84EA3C1BE17D870028236C /* WebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84EA3B1BE17D870028236C /* WebViewDelegate.m */; };
 		AEA1F48F1BDFE9E700672AFE /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1F48E1BDFE9E700672AFE /* StartViewController.m */; };
@@ -143,7 +141,6 @@
 				66A0CCAD19E7397600B74273 /* UIKit.framework in Frameworks */,
 				66A0CCAB19E7396F00B74273 /* Foundation.framework in Frameworks */,
 				63FEDCAE1CD734B800679E41 /* WebKit.framework in Frameworks */,
-				9F2B3956696B183C73BE98EF /* libPods-WebExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +148,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B2EA8BA730A00A3A8445B00 /* libPods-WebExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +339,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66A0CC9519E72E3500B74273 /* Build configuration list for PBXNativeTarget "WebExample" */;
 			buildPhases = (
-				78012ED09D4B479B929564EC /* [CP] Check Pods Manifest.lock */,
 				66A0CC6E19E72E3400B74273 /* Sources */,
 				66A0CC6F19E72E3400B74273 /* Frameworks */,
 				66A0CC7019E72E3400B74273 /* Resources */,
@@ -362,7 +357,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66A0CC9819E72E3500B74273 /* Build configuration list for PBXNativeTarget "WebExampleTests" */;
 			buildPhases = (
-				526D751CAA832B6601DF6CDF /* [CP] Check Pods Manifest.lock */,
 				66A0CC8719E72E3500B74273 /* Sources */,
 				66A0CC8819E72E3500B74273 /* Frameworks */,
 				66A0CC8919E72E3500B74273 /* Resources */,
@@ -521,50 +515,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebExampleP/Pods-WebExampleP-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		526D751CAA832B6601DF6CDF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WebExampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		78012ED09D4B479B929564EC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WebExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -773,7 +723,6 @@
 		};
 		66A0CC9619E72E3500B74273 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 722F7522A27C9647A35B8AAA /* Pods-WebExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -802,7 +751,6 @@
 		};
 		66A0CC9719E72E3500B74273 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D002840F13E88B9F7EA70B8 /* Pods-WebExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -830,7 +778,6 @@
 		};
 		66A0CC9919E72E3500B74273 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89029724F288A011E9CB20ED /* Pods-WebExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -851,7 +798,6 @@
 		};
 		66A0CC9A19E72E3500B74273 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9316DB35E808089AD1C47011 /* Pods-WebExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
