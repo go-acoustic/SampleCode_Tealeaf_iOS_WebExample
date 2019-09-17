@@ -70,7 +70,7 @@
 		4D002840F13E88B9F7EA70B8 /* Pods-WebExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.release.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.release.xcconfig"; sourceTree = "<group>"; };
 		636B3A4A23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TealeafEarlyLoads.h"; sourceTree = "<group>"; };
 		636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TealeafEarlyLoads.m"; sourceTree = "<group>"; };
-		63C82C6F2303568800743560 /* WebExampleP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebExampleP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C82C6F2303568800743560 /* WebExampleUsingCocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebExampleUsingCocoaPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C82C702303568800743560 /* WebExampleP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WebExampleP-Info.plist"; path = "/Users/sdamale/dev/publicgit/SampleCode_Tealeaf_iOS_WebExample/WebExample/WebExampleP-Info.plist"; sourceTree = "<absolute>"; };
 		63FEDCAD1CD734B800679E41 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		63FEDCB71CD73BC300679E41 /* WEWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEWKWebViewController.h; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 			children = (
 				66A0CC7219E72E3400B74273 /* HybridHTMLEmbedded.app */,
 				66A0CC8B19E72E3500B74273 /* WebExampleTests.xctest */,
-				63C82C6F2303568800743560 /* WebExampleP.app */,
+				63C82C6F2303568800743560 /* WebExampleUsingCocoaPods.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,9 +314,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		63C82C4E2303568800743560 /* WebExampleP */ = {
+		63C82C4E2303568800743560 /* WebExampleUsingCocoaPods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63C82C6C2303568800743560 /* Build configuration list for PBXNativeTarget "WebExampleP" */;
+			buildConfigurationList = 63C82C6C2303568800743560 /* Build configuration list for PBXNativeTarget "WebExampleUsingCocoaPods" */;
 			buildPhases = (
 				2F4F46E0CB756793822EBA67 /* [CP] Check Pods Manifest.lock */,
 				63C82C4F2303568800743560 /* Sources */,
@@ -330,9 +330,9 @@
 			);
 			dependencies = (
 			);
-			name = WebExampleP;
+			name = WebExampleUsingCocoaPods;
 			productName = WebExample;
-			productReference = 63C82C6F2303568800743560 /* WebExampleP.app */;
+			productReference = 63C82C6F2303568800743560 /* WebExampleUsingCocoaPods.app */;
 			productType = "com.apple.product-type.application";
 		};
 		66A0CC7119E72E3400B74273 /* WebExample */ = {
@@ -405,7 +405,7 @@
 			targets = (
 				66A0CC7119E72E3400B74273 /* WebExample */,
 				66A0CC8A19E72E3500B74273 /* WebExampleTests */,
-				63C82C4E2303568800743560 /* WebExampleP */,
+				63C82C4E2303568800743560 /* WebExampleUsingCocoaPods */,
 			);
 		};
 /* End PBXProject section */
@@ -815,7 +815,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63C82C6C2303568800743560 /* Build configuration list for PBXNativeTarget "WebExampleP" */ = {
+		63C82C6C2303568800743560 /* Build configuration list for PBXNativeTarget "WebExampleUsingCocoaPods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63C82C6D2303568800743560 /* Debug */,
