@@ -19,8 +19,6 @@
 		63C82C552303568800743560 /* SingleWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84EA381BE179690028236C /* SingleWebPageViewController.m */; };
 		63C82C562303568800743560 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7A19E72E3400B74273 /* AppDelegate.m */; };
 		63C82C572303568800743560 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7719E72E3400B74273 /* main.m */; };
-		63C82C642303568800743560 /* EOCoreSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 662B002D1F87185B0065A770 /* EOCoreSettings.bundle */; };
-		63C82C652303568800743560 /* TLFResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 662B002A1F87175D0065A770 /* TLFResources.bundle */; };
 		63C82C662303568800743560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC7F19E72E3500B74273 /* Main.storyboard */; };
 		63C82C672303568800743560 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC8419E72E3500B74273 /* LaunchScreen.xib */; };
 		63C82C682303568800743560 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC8219E72E3500B74273 /* Images.xcassets */; };
@@ -421,8 +419,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C82C642303568800743560 /* EOCoreSettings.bundle in Resources */,
-				63C82C652303568800743560 /* TLFResources.bundle in Resources */,
 				63C82C662303568800743560 /* Main.storyboard in Resources */,
 				63C82C672303568800743560 /* LaunchScreen.xib in Resources */,
 				63C82C682303568800743560 /* Images.xcassets in Resources */,
