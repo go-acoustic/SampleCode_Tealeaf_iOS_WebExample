@@ -30,3 +30,5 @@ UserInterfaceState.xcuserstate
 Breakpoints_v2.xcbkptlist
 *.xcuserstate
 xcuserdata
+/WebExample/Pods
+/WebExample/Podfile.lock
