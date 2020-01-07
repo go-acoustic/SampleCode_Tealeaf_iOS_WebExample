@@ -62,7 +62,7 @@ or to update
 
 Above pod command (install or update) should complete with no errors. If you do see errors run the same command with `--verbose` option and share the error log with us.
 
-Open `CXA.xcworkspace` file and not the `CXA.xcodeproj` file. Once you open the workspace file, please use target CXA to build the sample app and run it. There are multiple targets in the project however the only one that serves for this example is the CXA target.
+Open `WebExample.xcworkspace` file and not the `WebExample.xcodeproj` file. Once you open the workspace file, please use target WebExample to build the sample app and run it. There are multiple targets in the project however the only one that serves for this example is the WebExample target.
 
 ## Troubleshooting
 
@@ -74,4 +74,4 @@ If you are using Debug version of IBM Tealeaf SDK. i.e. `pod 'IBMTealeafDebug'` 
 
 ## License
 
-License files can be read [here](https://github.com/ibm-watson-cxa/IBMTealeaf/tree/master/Licenses)
+License files can be read [here](https://github.com/SampleCode_Tealeaf_iOS_WebExample/IBMTealeaf/tree/master/Licenses)
