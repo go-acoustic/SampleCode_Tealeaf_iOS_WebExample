@@ -1,19 +1,19 @@
 //
-//  Licensed Materials - Property of IBM
-//  (C) Copyright IBM Corp. 2017
-//  US Government Users Restricted Rights - Use, duplication or disclosure
-//  restricted by GSA ADP Schedule Contract with IBM Corp.
+// Copyright (C) 2020 Acoustic, L.P. All rights reserved.
+//
+// NOTICE: This file contains material that is confidential and proprietary to
+// Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
+// industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
+// Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+// prohibited.
 //
 
 #import "DoubleWebPageViewController.h"
-#import "WebViewDelegate.h"
 @interface DoubleWebPageViewController ()
 {
     BOOL didScrape;
     BOOL webView1DidLoad;
     BOOL webView2DidLoad;
-	WebViewDelegate *webDelegate1;
-	WebViewDelegate *webDelegate2;
 }
 @end
 
@@ -24,13 +24,21 @@
     didScrape=NO;
     webView1DidLoad=NO;
     webView2DidLoad=NO;
-	webDelegate1=[[WebViewDelegate alloc] init];
-	webDelegate2=[[WebViewDelegate alloc] init];
-	self.webView1.delegate=webDelegate1;
-	self.webView2.delegate=webDelegate2;
     [super viewDidLoad];
+    WKWebViewConfiguration *theConfiguration1 = [[WKWebViewConfiguration alloc] init];
+    [theConfiguration1.preferences setValue:@"TRUE" forKey:@"allowFileAccessFromFileURLs"];
+    [theConfiguration1 setValue:@"TRUE" forKey:@"allowUniversalAccessFromFileURLs"];
+    self.webView1 = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width) configuration:theConfiguration1];
+    
+    WKWebViewConfiguration *theConfiguration2 = [[WKWebViewConfiguration alloc] init];
+    [theConfiguration2.preferences setValue:@"TRUE" forKey:@"allowFileAccessFromFileURLs"];
+    [theConfiguration2 setValue:@"TRUE" forKey:@"allowUniversalAccessFromFileURLs"];
+    self.webView2 = [[WKWebView alloc] initWithFrame:CGRectMake(0, self.webView1.frame.size.height + 10, self.view.frame.size.width, self.view.frame.size.width) configuration:theConfiguration1];
+
     [_sessionID setText:[[TLFApplicationHelper sharedInstance] currentSessionId]];
     [self loadLocalFiles];
+    [self.view addSubview:self.webView1];
+    [self.view addSubview:self.webView2];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -42,33 +50,52 @@
 {
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"embeddedGesturesMenu" ofType:@"html" inDirectory:@"mobile_domcap/"]];
     NSURLRequest *request1 = [NSURLRequest requestWithURL:url];
-    [_webView1 loadRequest:request1];
+    [self.webView1 loadRequest:request1];
     NSURLRequest *request2 = [NSURLRequest requestWithURL:url];
-    [_webView2 loadRequest:request2];
+    [self.webView2 loadRequest:request2];
 }
-
-//-(void)webViewDidFinishLoad:(UIWebView *)webView
-//{
-////    if (webView==self.webView2)
-////        webView2DidLoad=YES;
-////    else if (webView==self.webView1)
-////        webView1DidLoad=YES;
-////    if (webView1DidLoad && webView2DidLoad && !didScrape)
-////    {
-////        didScrape=YES;
-////        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC),dispatch_get_main_queue(), ^{
-////            [[TLFCustomEvent sharedInstance] logScreenLayoutWithViewController:self];
-////        });
-////    }
-//}
-//
-//- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
-//{
-//    return YES;
-//}
 
 - (IBAction)back:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (void)userContentController:(nonnull WKUserContentController *)userContentController didReceiveScriptMessage:(nonnull WKScriptMessage *)message {
+}
+
+- (void)encodeWithCoder:(nonnull NSCoder *)coder {
+}
+
+- (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
+}
+
+- (void)preferredContentSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
+}
+
+- (CGSize)sizeForChildContentContainer:(nonnull id<UIContentContainer>)container withParentContainerSize:(CGSize)parentSize {
+    return CGSizeMake(parentSize.width, parentSize.height);
+}
+
+- (void)systemLayoutFittingSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
+}
+
+- (void)willTransitionToTraitCollection:(nonnull UITraitCollection *)newCollection withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
+}
+
+- (void)didUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context withAnimationCoordinator:(nonnull UIFocusAnimationCoordinator *)coordinator {
+}
+
+- (void)setNeedsFocusUpdate {
+}
+
+- (BOOL)shouldUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context {
+    return YES;
+}
+
+- (void)updateFocusIfNeeded {
+}
+
 @end

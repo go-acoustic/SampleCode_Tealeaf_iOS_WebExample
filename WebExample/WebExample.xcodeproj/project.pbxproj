@@ -13,10 +13,8 @@
 		636B3A4E23303D4A007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */; };
 		63C82C502303568800743560 /* DoubleWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7D19E72E3500B74273 /* DoubleWebPageViewController.m */; };
 		63C82C512303568800743560 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1F48E1BDFE9E700672AFE /* StartViewController.m */; };
-		63C82C522303568800743560 /* WebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84EA3B1BE17D870028236C /* WebViewDelegate.m */; };
 		63C82C532303568800743560 /* WebExampleSessionIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */; };
 		63C82C542303568800743560 /* WEWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDCB81CD73BC300679E41 /* WEWKWebViewController.m */; };
-		63C82C552303568800743560 /* SingleWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84EA381BE179690028236C /* SingleWebPageViewController.m */; };
 		63C82C562303568800743560 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7A19E72E3400B74273 /* AppDelegate.m */; };
 		63C82C572303568800743560 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7719E72E3400B74273 /* main.m */; };
 		63C82C662303568800743560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC7F19E72E3500B74273 /* Main.storyboard */; };
@@ -46,8 +44,6 @@
 		66B2F9A61FAA467500F52C99 /* Tealeaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681EBEC1F97C9BB0069D0F3 /* Tealeaf.framework */; };
 		66B2F9A71FAA467500F52C99 /* libEOCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681EBEB1F97C9BB0069D0F3 /* libEOCore.a */; };
 		8F1CBDE91D00880A00B9245E /* WebExampleSessionIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */; };
-		AE84EA391BE179690028236C /* SingleWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84EA381BE179690028236C /* SingleWebPageViewController.m */; };
-		AE84EA3C1BE17D870028236C /* WebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE84EA3B1BE17D870028236C /* WebViewDelegate.m */; };
 		AEA1F48F1BDFE9E700672AFE /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1F48E1BDFE9E700672AFE /* StartViewController.m */; };
 		AEDF2C0D1AD31E6D00A25255 /* mobile_domcap in Resources */ = {isa = PBXBuildFile; fileRef = AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */; };
 /* End PBXBuildFile section */
@@ -108,10 +104,6 @@
 		8F1CBDE71D00880A00B9245E /* WebExampleSessionIdGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebExampleSessionIdGenerator.h; sourceTree = "<group>"; };
 		8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebExampleSessionIdGenerator.m; sourceTree = "<group>"; };
 		9316DB35E808089AD1C47011 /* Pods-WebExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExampleTests.release.xcconfig"; path = "Target Support Files/Pods-WebExampleTests/Pods-WebExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		AE84EA371BE179690028236C /* SingleWebPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleWebPageViewController.h; sourceTree = "<group>"; };
-		AE84EA381BE179690028236C /* SingleWebPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleWebPageViewController.m; sourceTree = "<group>"; };
-		AE84EA3A1BE17D870028236C /* WebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewDelegate.h; sourceTree = "<group>"; };
-		AE84EA3B1BE17D870028236C /* WebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewDelegate.m; sourceTree = "<group>"; };
 		AEA1F48D1BDFE9E700672AFE /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		AEA1F48E1BDFE9E700672AFE /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mobile_domcap; sourceTree = "<group>"; };
@@ -196,14 +188,10 @@
 				66A0CC7A19E72E3400B74273 /* AppDelegate.m */,
 				8F1CBDE71D00880A00B9245E /* WebExampleSessionIdGenerator.h */,
 				8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */,
-				AE84EA3A1BE17D870028236C /* WebViewDelegate.h */,
-				AE84EA3B1BE17D870028236C /* WebViewDelegate.m */,
 				AEA1F48D1BDFE9E700672AFE /* StartViewController.h */,
 				AEA1F48E1BDFE9E700672AFE /* StartViewController.m */,
 				66A0CC7C19E72E3400B74273 /* DoubleWebPageViewController.h */,
 				66A0CC7D19E72E3500B74273 /* DoubleWebPageViewController.m */,
-				AE84EA371BE179690028236C /* SingleWebPageViewController.h */,
-				AE84EA381BE179690028236C /* SingleWebPageViewController.m */,
 				66A0CC7F19E72E3500B74273 /* Main.storyboard */,
 				63FEDCB71CD73BC300679E41 /* WEWKWebViewController.h */,
 				63FEDCB81CD73BC300679E41 /* WEWKWebViewController.m */,
@@ -521,10 +509,8 @@
 				636B3A4E23303D4A007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */,
 				63C82C502303568800743560 /* DoubleWebPageViewController.m in Sources */,
 				63C82C512303568800743560 /* StartViewController.m in Sources */,
-				63C82C522303568800743560 /* WebViewDelegate.m in Sources */,
 				63C82C532303568800743560 /* WebExampleSessionIdGenerator.m in Sources */,
 				63C82C542303568800743560 /* WEWKWebViewController.m in Sources */,
-				63C82C552303568800743560 /* SingleWebPageViewController.m in Sources */,
 				63C82C562303568800743560 /* AppDelegate.m in Sources */,
 				63C82C572303568800743560 /* main.m in Sources */,
 			);
@@ -536,10 +522,8 @@
 			files = (
 				66A0CC7E19E72E3500B74273 /* DoubleWebPageViewController.m in Sources */,
 				AEA1F48F1BDFE9E700672AFE /* StartViewController.m in Sources */,
-				AE84EA3C1BE17D870028236C /* WebViewDelegate.m in Sources */,
 				8F1CBDE91D00880A00B9245E /* WebExampleSessionIdGenerator.m in Sources */,
 				63FEDCB91CD73BC300679E41 /* WEWKWebViewController.m in Sources */,
-				AE84EA391BE179690028236C /* SingleWebPageViewController.m in Sources */,
 				66A0CC7B19E72E3400B74273 /* AppDelegate.m in Sources */,
 				636B3A4D23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */,
 				66A0CC7819E72E3400B74273 /* main.m in Sources */,
