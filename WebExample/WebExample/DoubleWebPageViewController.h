@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DoubleWebPageViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
+@interface DoubleWebPageViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
 
 @property (strong, nonatomic) IBOutlet WKWebView *webView1;
 @property (strong, nonatomic) IBOutlet WKWebView *webView2;
