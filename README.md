@@ -74,4 +74,4 @@ If you are using Debug version of IBM Tealeaf SDK. i.e. `pod 'IBMTealeafDebug'` 
 
 ## License
 
-License files can be read [here](https://github.com/SampleCode_Tealeaf_iOS_WebExample/IBMTealeaf/tree/master/Licenses)
+License files can be read [here](https://github.com/ibm-watson-cxa/SampleCode_Tealeaf_iOS_WebExample/blob/master/Licenses/License)
