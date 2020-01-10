@@ -10,35 +10,34 @@
 
 #import "DoubleWebPageViewController.h"
 @interface DoubleWebPageViewController ()
-{
-    BOOL didScrape;
-    BOOL webView1DidLoad;
-    BOOL webView2DidLoad;
-}
 @end
 
 @implementation DoubleWebPageViewController
 
 - (void)viewDidLoad
 {
-    didScrape=NO;
-    webView1DidLoad=NO;
-    webView2DidLoad=NO;
     [super viewDidLoad];
-    WKWebViewConfiguration *theConfiguration1 = [[WKWebViewConfiguration alloc] init];
-    [theConfiguration1.preferences setValue:@"TRUE" forKey:@"allowFileAccessFromFileURLs"];
-    [theConfiguration1 setValue:@"TRUE" forKey:@"allowUniversalAccessFromFileURLs"];
-    self.webView1 = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width) configuration:theConfiguration1];
-    
-    WKWebViewConfiguration *theConfiguration2 = [[WKWebViewConfiguration alloc] init];
-    [theConfiguration2.preferences setValue:@"TRUE" forKey:@"allowFileAccessFromFileURLs"];
-    [theConfiguration2 setValue:@"TRUE" forKey:@"allowUniversalAccessFromFileURLs"];
-    self.webView2 = [[WKWebView alloc] initWithFrame:CGRectMake(0, self.webView1.frame.size.height + 10, self.view.frame.size.width, self.view.frame.size.width) configuration:theConfiguration1];
-
     [_sessionID setText:[[TLFApplicationHelper sharedInstance] currentSessionId]];
-    [self loadLocalFiles];
+    [self createWebViews];
     [self.view addSubview:self.webView1];
     [self.view addSubview:self.webView2];
+    [self loadLocalFiles];
+}
+
+- (void)createWebViews
+{
+    [self createWebView:self.webView1 withPosition:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width)];
+    [self createWebView:self.webView2 withPosition:CGRectMake(0, self.webView1.frame.size.height + 10, self.view.frame.size.width, self.view.frame.size.width)];
+}
+
+- (void)createWebView:(WKWebView*)web withPosition:(CGRect)position
+{
+    WKWebViewConfiguration *theConfiguration = [[WKWebViewConfiguration alloc] init];
+    [theConfiguration.preferences setValue:@"TRUE" forKey:@"allowFileAccessFromFileURLs"];
+    [theConfiguration setValue:@"TRUE" forKey:@"allowUniversalAccessFromFileURLs"];
+    web = [[WKWebView alloc] initWithFrame:position configuration:theConfiguration];
+//    self.webView1.navigationDelegate = self;
+//    self.webView1.UIDelegate = self;
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -48,11 +47,15 @@
 
 - (void)loadLocalFiles
 {
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"embeddedGesturesMenu" ofType:@"html" inDirectory:@"mobile_domcap/"]];
-    NSURLRequest *request1 = [NSURLRequest requestWithURL:url];
-    [self.webView1 loadRequest:request1];
-    NSURLRequest *request2 = [NSURLRequest requestWithURL:url];
-    [self.webView2 loadRequest:request2];
+    [self loadLocalFilesHelper:self.webView1];
+    [self loadLocalFilesHelper:self.webView2];
+}
+
+- (void)loadLocalFilesHelper:(WKWebView*)web
+{
+    NSURL *url1 = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"embeddedGesturesMenu" ofType:@"html" inDirectory:@"mobile_domcap/"]];
+    NSURLRequest *request1 = [NSURLRequest requestWithURL:url1];
+    [web loadRequest:request1];
 }
 
 - (IBAction)back:(id)sender
