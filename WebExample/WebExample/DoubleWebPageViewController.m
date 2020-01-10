@@ -26,18 +26,19 @@
 
 - (void)createWebViews
 {
-    [self createWebView:self.webView1 withPosition:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width)];
-    [self createWebView:self.webView2 withPosition:CGRectMake(0, self.webView1.frame.size.height + 10, self.view.frame.size.width, self.view.frame.size.width)];
+    self.webView1 = [self createWebView:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width)];
+    self.webView2 = [self createWebView:CGRectMake(0, self.webView1.frame.size.height + 10, self.view.frame.size.width, self.view.frame.size.width)];
 }
 
-- (void)createWebView:(WKWebView*)web withPosition:(CGRect)position
+- (WKWebView*)createWebView:(CGRect)position
 {
     WKWebViewConfiguration *theConfiguration = [[WKWebViewConfiguration alloc] init];
     [theConfiguration.preferences setValue:@"TRUE" forKey:@"allowFileAccessFromFileURLs"];
     [theConfiguration setValue:@"TRUE" forKey:@"allowUniversalAccessFromFileURLs"];
-    web = [[WKWebView alloc] initWithFrame:position configuration:theConfiguration];
+    WKWebView* web = [[WKWebView alloc] initWithFrame:position configuration:theConfiguration];
 //    self.webView1.navigationDelegate = self;
 //    self.webView1.UIDelegate = self;
+    return web;
 }
 
 -(void)viewDidAppear:(BOOL)animated
