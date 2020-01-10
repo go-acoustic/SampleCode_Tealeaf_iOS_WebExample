@@ -64,6 +64,9 @@ Above pod command (install or update) should complete with no errors. If you do 
 
 Open `WebExample.xcworkspace` file and not the `WebExample.xcodeproj` file. Once you open the workspace file, please use target WebExample to build the sample app and run it. There are multiple targets in the project however the only one that serves for this example is the WebExample target.
 
+## Update Post Location
+Go to `TealeafBasicConfig.plist`, then update `AppKey` for correct app key if you are using SaaS. Also update `PostMessageUrl` to correct post url.
+
 ## Troubleshooting
 
 If you are using Debug version of IBM Tealeaf SDK. i.e. `pod 'IBMTealeafDebug'` , then you may edit your project's scheme in XCode and add environmental variable `EODebug`and set its value to 1; also add environmental variable `TLF_DEBUG` and set its value to 1. This will make the SDK to start writing debug logs to your xcode console window. If and when you want to report issues, the Tealeaf support engineers will ask you for these logs.
