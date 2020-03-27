@@ -139,7 +139,7 @@
  @brief Requests that the framework logs the connection information.
  @param initTime - Time duration since current session start
  @param loadTime - Time duration since current session start //TODO: EVALUATE what param loadTime actually means
- @param connection - The NSURLConnection object
+ @param connection - The NSURLSession object, can be nil
  @param request - The NSURLRequest object associated with the connection
  @param response - The NSURLResponse object from the connection request
  @param error - any NSError object
