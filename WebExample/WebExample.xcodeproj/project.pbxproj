@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		53A3F158A7CCDF66EC686899 /* libPods-WebExampleUsingCocoaPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8A3E2884D568AAD8887171 /* libPods-WebExampleUsingCocoaPods.a */; };
-		636B3A4C23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h in Headers */ = {isa = PBXBuildFile; fileRef = 636B3A4A23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h */; };
-		636B3A4D23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */; };
 		636B3A4E23303D4A007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */; };
 		63C82C502303568800743560 /* DoubleWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7D19E72E3500B74273 /* DoubleWebPageViewController.m */; };
 		63C82C512303568800743560 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1F48E1BDFE9E700672AFE /* StartViewController.m */; };
@@ -21,42 +19,8 @@
 		63C82C672303568800743560 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC8419E72E3500B74273 /* LaunchScreen.xib */; };
 		63C82C682303568800743560 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC8219E72E3500B74273 /* Images.xcassets */; };
 		63C82C692303568800743560 /* mobile_domcap in Resources */ = {isa = PBXBuildFile; fileRef = AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */; };
-		63C82C6B2303568800743560 /* EOApplicationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 668AFCCD1FAAAA1500936434 /* EOApplicationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63FEDCAE1CD734B800679E41 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEDCAD1CD734B800679E41 /* WebKit.framework */; };
-		63FEDCB91CD73BC300679E41 /* WEWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDCB81CD73BC300679E41 /* WEWKWebViewController.m */; };
-		661DFD391DB1A4CE005CD73F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 661DFD381DB1A4CE005CD73F /* libz.tbd */; };
-		662B002E1F87188D0065A770 /* EOCoreSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 662B002D1F87185B0065A770 /* EOCoreSettings.bundle */; };
-		662B002F1F87188D0065A770 /* TLFResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 662B002A1F87175D0065A770 /* TLFResources.bundle */; };
-		668AFCCE1FAAAA1500936434 /* EOApplicationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 668AFCCD1FAAAA1500936434 /* EOApplicationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66A0CC7819E72E3400B74273 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7719E72E3400B74273 /* main.m */; };
-		66A0CC7B19E72E3400B74273 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7A19E72E3400B74273 /* AppDelegate.m */; };
-		66A0CC7E19E72E3500B74273 /* DoubleWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7D19E72E3500B74273 /* DoubleWebPageViewController.m */; };
-		66A0CC8119E72E3500B74273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC7F19E72E3500B74273 /* Main.storyboard */; };
-		66A0CC8319E72E3500B74273 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC8219E72E3500B74273 /* Images.xcassets */; };
-		66A0CC8619E72E3500B74273 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC8419E72E3500B74273 /* LaunchScreen.xib */; };
 		66A0CC9219E72E3500B74273 /* WebExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC9119E72E3500B74273 /* WebExampleTests.m */; };
-		66A0CCAB19E7396F00B74273 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A0CCAA19E7396F00B74273 /* Foundation.framework */; };
-		66A0CCAD19E7397600B74273 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A0CCAC19E7397600B74273 /* UIKit.framework */; };
-		66A0CCAF19E7397F00B74273 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A0CCAE19E7397F00B74273 /* CoreTelephony.framework */; };
-		66A0CCB119E7398700B74273 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A0CCB019E7398700B74273 /* CoreLocation.framework */; };
-		66A0CCB319E7399000B74273 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A0CCB219E7399000B74273 /* MediaPlayer.framework */; };
-		66A0CCB519E7399D00B74273 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A0CCB419E7399D00B74273 /* SystemConfiguration.framework */; };
-		66B2F9A61FAA467500F52C99 /* Tealeaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681EBEC1F97C9BB0069D0F3 /* Tealeaf.framework */; };
-		66B2F9A71FAA467500F52C99 /* libEOCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6681EBEB1F97C9BB0069D0F3 /* libEOCore.a */; };
-		8F1CBDE91D00880A00B9245E /* WebExampleSessionIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */; };
-		AEA1F48F1BDFE9E700672AFE /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1F48E1BDFE9E700672AFE /* StartViewController.m */; };
-		AEDF2C0D1AD31E6D00A25255 /* mobile_domcap in Resources */ = {isa = PBXBuildFile; fileRef = AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		66A0CC8C19E72E3500B74273 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 66A0CC6A19E72E3400B74273 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 66A0CC7119E72E3400B74273;
-			remoteInfo = WebExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03D20C94A8AC365E6F3A4C9C /* Pods-WebExampleP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExampleP.debug.xcconfig"; path = "Target Support Files/Pods-WebExampleP/Pods-WebExampleP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +30,7 @@
 		4D002840F13E88B9F7EA70B8 /* Pods-WebExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.release.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.release.xcconfig"; sourceTree = "<group>"; };
 		636B3A4A23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TealeafEarlyLoads.h"; sourceTree = "<group>"; };
 		636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TealeafEarlyLoads.m"; sourceTree = "<group>"; };
-		63C82C6F2303568800743560 /* WebExampleUsingCocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebExampleUsingCocoaPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C82C6F2303568800743560 /* WebExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C82C702303568800743560 /* WebExampleP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WebExampleP-Info.plist"; path = "/Users/sdamale/dev/publicgit/SampleCode_Tealeaf_iOS_WebExample/WebExample/WebExampleP-Info.plist"; sourceTree = "<absolute>"; };
 		63FEDCAD1CD734B800679E41 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		63FEDCB71CD73BC300679E41 /* WEWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEWKWebViewController.h; sourceTree = "<group>"; };
@@ -78,7 +42,6 @@
 		6681EBEB1F97C9BB0069D0F3 /* libEOCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEOCore.a; sourceTree = "<group>"; };
 		6681EBEC1F97C9BB0069D0F3 /* Tealeaf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tealeaf.framework; sourceTree = "<group>"; };
 		668AFCCD1FAAAA1500936434 /* EOApplicationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOApplicationHelper.h; sourceTree = "<group>"; };
-		66A0CC7219E72E3400B74273 /* HybridHTMLEmbedded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridHTMLEmbedded.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A0CC7619E72E3400B74273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66A0CC7719E72E3400B74273 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66A0CC7919E72E3400B74273 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +67,9 @@
 		8F1CBDE71D00880A00B9245E /* WebExampleSessionIdGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebExampleSessionIdGenerator.h; sourceTree = "<group>"; };
 		8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebExampleSessionIdGenerator.m; sourceTree = "<group>"; };
 		9316DB35E808089AD1C47011 /* Pods-WebExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExampleTests.release.xcconfig"; path = "Target Support Files/Pods-WebExampleTests/Pods-WebExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		990BEA2D248EBE33004D4B7B /* WebExampleUsingCocoaPods copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WebExampleUsingCocoaPods copy-Info.plist"; path = "/Users/ohernandez@us.ibm.com/git/github/SampleCode_Tealeaf_iOS_WebExample/WebExample/WebExampleUsingCocoaPods copy-Info.plist"; sourceTree = "<absolute>"; };
+		99457DE4248EBBA10042CA71 /* EOApplicationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EOApplicationHelper.h; path = Pods/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/Headers/EOApplicationHelper.h; sourceTree = "<group>"; };
+		99457DE6248EBC9D0042CA71 /* libPods-WebExampleUsingCocoaPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-WebExampleUsingCocoaPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA1F48D1BDFE9E700672AFE /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		AEA1F48E1BDFE9E700672AFE /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mobile_domcap; sourceTree = "<group>"; };
@@ -117,23 +83,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				53A3F158A7CCDF66EC686899 /* libPods-WebExampleUsingCocoaPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66A0CC6F19E72E3400B74273 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66B2F9A61FAA467500F52C99 /* Tealeaf.framework in Frameworks */,
-				66B2F9A71FAA467500F52C99 /* libEOCore.a in Frameworks */,
-				661DFD391DB1A4CE005CD73F /* libz.tbd in Frameworks */,
-				66A0CCB519E7399D00B74273 /* SystemConfiguration.framework in Frameworks */,
-				66A0CCB319E7399000B74273 /* MediaPlayer.framework in Frameworks */,
-				66A0CCB119E7398700B74273 /* CoreLocation.framework in Frameworks */,
-				66A0CCAF19E7397F00B74273 /* CoreTelephony.framework in Frameworks */,
-				66A0CCAD19E7397600B74273 /* UIKit.framework in Frameworks */,
-				66A0CCAB19E7396F00B74273 /* Foundation.framework in Frameworks */,
-				63FEDCAE1CD734B800679E41 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,21 +108,22 @@
 		66A0CC6919E72E3400B74273 = {
 			isa = PBXGroup;
 			children = (
+				99457DE4248EBBA10042CA71 /* EOApplicationHelper.h */,
 				66A0CCB819E739C700B74273 /* Frameworks */,
 				66A0CC7419E72E3400B74273 /* WebExample */,
 				66A0CC8E19E72E3500B74273 /* WebExampleTests */,
 				66A0CC7319E72E3400B74273 /* Products */,
 				63C82C702303568800743560 /* WebExampleP-Info.plist */,
 				89E59BC43B58D0E6D0E2E7D4 /* Pods */,
+				990BEA2D248EBE33004D4B7B /* WebExampleUsingCocoaPods copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		66A0CC7319E72E3400B74273 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66A0CC7219E72E3400B74273 /* HybridHTMLEmbedded.app */,
 				66A0CC8B19E72E3500B74273 /* WebExampleTests.xctest */,
-				63C82C6F2303568800743560 /* WebExampleUsingCocoaPods.app */,
+				63C82C6F2303568800743560 /* WebExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,6 +182,7 @@
 		66A0CCB819E739C700B74273 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99457DE6248EBC9D0042CA71 /* libPods-WebExampleUsingCocoaPods.a */,
 				661DFD381DB1A4CE005CD73F /* libz.tbd */,
 				63FEDCAD1CD734B800679E41 /* WebKit.framework */,
 				66A0CCB419E7399D00B74273 /* SystemConfiguration.framework */,
@@ -290,25 +241,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C82C6B2303568800743560 /* EOApplicationHelper.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		668AFCCA1FAAA94E00936434 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				668AFCCE1FAAAA1500936434 /* EOApplicationHelper.h in Headers */,
-				636B3A4C23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		63C82C4E2303568800743560 /* WebExampleUsingCocoaPods */ = {
+		63C82C4E2303568800743560 /* WebExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63C82C6C2303568800743560 /* Build configuration list for PBXNativeTarget "WebExampleUsingCocoaPods" */;
+			buildConfigurationList = 63C82C6C2303568800743560 /* Build configuration list for PBXNativeTarget "WebExample" */;
 			buildPhases = (
 				2F4F46E0CB756793822EBA67 /* [CP] Check Pods Manifest.lock */,
 				63C82C4F2303568800743560 /* Sources */,
@@ -322,27 +263,9 @@
 			);
 			dependencies = (
 			);
-			name = WebExampleUsingCocoaPods;
-			productName = WebExample;
-			productReference = 63C82C6F2303568800743560 /* WebExampleUsingCocoaPods.app */;
-			productType = "com.apple.product-type.application";
-		};
-		66A0CC7119E72E3400B74273 /* WebExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 66A0CC9519E72E3500B74273 /* Build configuration list for PBXNativeTarget "WebExample" */;
-			buildPhases = (
-				66A0CC6E19E72E3400B74273 /* Sources */,
-				66A0CC6F19E72E3400B74273 /* Frameworks */,
-				66A0CC7019E72E3400B74273 /* Resources */,
-				668AFCCA1FAAA94E00936434 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
 			name = WebExample;
 			productName = WebExample;
-			productReference = 66A0CC7219E72E3400B74273 /* HybridHTMLEmbedded.app */;
+			productReference = 63C82C6F2303568800743560 /* WebExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		66A0CC8A19E72E3500B74273 /* WebExampleTests */ = {
@@ -356,7 +279,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				66A0CC8D19E72E3500B74273 /* PBXTargetDependency */,
 			);
 			name = WebExampleTests;
 			productName = WebExampleTests;
@@ -369,14 +291,10 @@
 		66A0CC6A19E72E3400B74273 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = IBM;
 				TargetAttributes = {
 					63C82C4E2303568800743560 = {
-						DevelopmentTeam = PP64RT7P8Z;
-					};
-					66A0CC7119E72E3400B74273 = {
-						CreatedOnToolsVersion = 6.0.1;
 						DevelopmentTeam = PP64RT7P8Z;
 					};
 				};
@@ -395,9 +313,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66A0CC7119E72E3400B74273 /* WebExample */,
 				66A0CC8A19E72E3500B74273 /* WebExampleTests */,
-				63C82C4E2303568800743560 /* WebExampleUsingCocoaPods */,
+				63C82C4E2303568800743560 /* WebExample */,
 			);
 		};
 /* End PBXProject section */
@@ -411,19 +328,6 @@
 				63C82C672303568800743560 /* LaunchScreen.xib in Resources */,
 				63C82C682303568800743560 /* Images.xcassets in Resources */,
 				63C82C692303568800743560 /* mobile_domcap in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66A0CC7019E72E3400B74273 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				662B002E1F87188D0065A770 /* EOCoreSettings.bundle in Resources */,
-				662B002F1F87188D0065A770 /* TLFResources.bundle in Resources */,
-				66A0CC8119E72E3500B74273 /* Main.storyboard in Resources */,
-				66A0CC8619E72E3500B74273 /* LaunchScreen.xib in Resources */,
-				66A0CC8319E72E3500B74273 /* Images.xcassets in Resources */,
-				AEDF2C0D1AD31E6D00A25255 /* mobile_domcap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,20 +420,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66A0CC6E19E72E3400B74273 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66A0CC7E19E72E3500B74273 /* DoubleWebPageViewController.m in Sources */,
-				AEA1F48F1BDFE9E700672AFE /* StartViewController.m in Sources */,
-				8F1CBDE91D00880A00B9245E /* WebExampleSessionIdGenerator.m in Sources */,
-				63FEDCB91CD73BC300679E41 /* WEWKWebViewController.m in Sources */,
-				66A0CC7B19E72E3400B74273 /* AppDelegate.m in Sources */,
-				636B3A4D23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m in Sources */,
-				66A0CC7819E72E3400B74273 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		66A0CC8719E72E3500B74273 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,14 +429,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		66A0CC8D19E72E3500B74273 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 66A0CC7119E72E3400B74273 /* WebExample */;
-			targetProxy = 66A0CC8C19E72E3500B74273 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		66A0CC7F19E72E3500B74273 /* Main.storyboard */ = {
@@ -574,11 +456,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 10.0.1;
 				DEVELOPMENT_TEAM = PP64RT7P8Z;
 				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
 				INFOPLIST_FILE = "WebExampleP-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ea.WebExample;
+				PRODUCT_NAME = WebExample;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -589,11 +473,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 10.0.1;
 				DEVELOPMENT_TEAM = PP64RT7P8Z;
 				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
 				INFOPLIST_FILE = "WebExampleP-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ea.WebExample;
+				PRODUCT_NAME = WebExample;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -602,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -610,12 +497,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -656,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -664,12 +554,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -699,61 +591,6 @@
 			};
 			name = Release;
 		};
-		66A0CC9619E72E3500B74273 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WebExample",
-				);
-				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
-				INFOPLIST_FILE = WebExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WebExample",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = HybridHTMLEmbedded;
-				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
-			};
-			name = Debug;
-		};
-		66A0CC9719E72E3500B74273 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WebExample",
-				);
-				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
-				INFOPLIST_FILE = WebExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/WebExample",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = HybridHTMLEmbedded;
-				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
-			};
-			name = Release;
-		};
 		66A0CC9919E72E3500B74273 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -767,7 +604,7 @@
 				);
 				INFOPLIST_FILE = WebExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ea.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HybridHTMLEmbedded.app/HybridHTMLEmbedded";
@@ -783,7 +620,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = WebExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ea.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HybridHTMLEmbedded.app/HybridHTMLEmbedded";
@@ -793,7 +630,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63C82C6C2303568800743560 /* Build configuration list for PBXNativeTarget "WebExampleUsingCocoaPods" */ = {
+		63C82C6C2303568800743560 /* Build configuration list for PBXNativeTarget "WebExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63C82C6D2303568800743560 /* Debug */,
@@ -807,15 +644,6 @@
 			buildConfigurations = (
 				66A0CC9319E72E3500B74273 /* Debug */,
 				66A0CC9419E72E3500B74273 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		66A0CC9519E72E3500B74273 /* Build configuration list for PBXNativeTarget "WebExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				66A0CC9619E72E3500B74273 /* Debug */,
-				66A0CC9719E72E3500B74273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

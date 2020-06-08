@@ -3570,8 +3570,8 @@ window.TLT = (function () {
                     }
                 }
 
-                // Try to set the cookie with two domain components. e.g. "ibm.com".
-                // If not successful try with three domain components, e.g. "ibm.co.uk" and so on.
+                // Try to set the cookie with two domain components. e.g. "ea.com".
+                // If not successful try with three domain components, e.g. "ea.co.uk" and so on.
                 for (len = domainArray.length, i = (len === 1 ? 1 : 2); i <= len; i += 1) {
                     document.cookie = cookieName + "=" + cookieValue + ";domain=" + domainArray.slice(-i).join('.') + pathStr + maxAgeStr + secureStr;
                     if (this.getCookieValue(cookieName) === cookieValue) {
