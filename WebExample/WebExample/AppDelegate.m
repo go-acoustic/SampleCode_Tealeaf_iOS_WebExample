@@ -9,6 +9,8 @@
 #import "WebExampleSessionIdGenerator.h"
 #import <AdSupport/ASIdentifierManager.h>
 
+@import Tealeaf;
+
 WebExampleSessionIdGenerator* globalSessionIdGenerator;
 
 @interface AppDelegate ()

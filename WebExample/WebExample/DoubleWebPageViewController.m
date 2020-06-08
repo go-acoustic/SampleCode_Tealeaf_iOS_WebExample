@@ -9,6 +9,7 @@
 //
 
 #import "DoubleWebPageViewController.h"
+@import Tealeaf;
 @interface DoubleWebPageViewController ()
 @end
 

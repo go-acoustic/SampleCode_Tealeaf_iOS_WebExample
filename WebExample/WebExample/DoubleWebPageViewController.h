@@ -9,6 +9,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@import WebKit;
 
 @interface DoubleWebPageViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
 

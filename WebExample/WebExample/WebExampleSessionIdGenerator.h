@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@import Tealeaf;
 @interface WebExampleSessionIdGenerator : NSObject<TLFLibDelegate>
 
 @end
