@@ -94,7 +94,7 @@
         queues: [
             {
                 qid: "DEFAULT",
-                endpoint: "/TealeafTarget.php",
+                endpoint: "",
                 maxEvents: 100,
                 timerInterval: 0,
                 maxSize: 0,
@@ -136,7 +136,7 @@
         }
       },
       domCapture: {
-        diffEnabled: true,
+        diffEnabled: false,
         // DOM Capture options
         options: {
           maxMutations: 100,       // If this threshold is met or exceeded, a full DOM is captured instead of a diff.
@@ -189,6 +189,7 @@
         "triggers": [
                     {
                                "event": "load"
+                     
                                },
                                {
                                "event": "click"
