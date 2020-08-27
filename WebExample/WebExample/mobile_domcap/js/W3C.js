@@ -7,7 +7,7 @@
  * Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
  * prohibited.
  *
- * @version 5.7.0.1914
+ * @version 5.7.0.1915
  * @flags w3c,NDEBUG
  */
 
@@ -732,7 +732,7 @@ window.TLT = (function () {
              * @returns {String} The library version string.
              */
             getLibraryVersion: function () {
-                return "5.7.0.1914";
+                return "5.7.0.1915";
             },
 
             /**
@@ -3761,13 +3761,8 @@ window.TLT = (function () {
                     }
                 }
 
-<<<<<<< HEAD
-                // Try to set the cookie with two domain components. e.g. "ea.com".
-                // If not successful try with three domain components, e.g. "ea.co.uk" and so on.
-=======
                 // Try to set the cookie with two domain components. e.g. "foo.com".
                 // If not successful try with three domain components, e.g. "foo.co.uk" and so on.
->>>>>>> Updated the default configuration on the test application.
                 for (len = domainArray.length, i = (len === 1 ? 1 : 2); i <= len; i += 1) {
                     document.cookie = cookieName + "=" + cookieValue + ";domain=" + domainArray.slice(-i).join('.') + pathStr + maxAgeStr + secureStr;
                     if (this.getCookieValue(cookieName) === cookieValue) {
@@ -4965,7 +4960,7 @@ TLT.addService("queue", function (core) {
             httpHeaders = {
                 "Content-Type": "application/json",
                 "X-PageId": core.getPageId(),
-                "X-Tealeaf": "device (UIC) Lib/5.7.0.1914",
+                "X-Tealeaf": "device (UIC) Lib/5.7.0.1915",
                 "X-TealeafType": "GUI",
                 "X-TeaLeaf-Page-Url": getUrlPath(),
                 "X-Tealeaf-SyncXHR": (!!sync).toString()
@@ -10009,7 +10004,7 @@ TLT.addService("message", function (core) {
                     messages: messages,
                     clientEnvironment: {
                         webEnvironment: {
-                            libVersion: "5.7.0.1914",
+                            libVersion: "5.7.0.1915",
                             domain: windowHostname,
                             page: windowHref,
                             referrer: document.referrer,
@@ -11956,9 +11951,10 @@ TLT.addModule("replay", function (context) {
                         TLT.registerMutationCallback(mutationDomCapture, false);
                     }
                 }
+                pendingEvent.lastStatus = queryStatus;
+                break;
             }
             pendingEvent.lastStatus = queryStatus;
-            break;
         }
     }
 
