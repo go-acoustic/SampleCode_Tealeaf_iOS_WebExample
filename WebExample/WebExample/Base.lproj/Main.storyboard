@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Tua-cy-gEo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Tua-cy-gEo">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5s-XM-bRY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5s-XM-bRY">
                                 <rect key="frame" x="125" y="325" width="125" height="30"/>
                                 <state key="normal" title="Multi WKWebView">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -28,8 +29,8 @@
                                     <action selector="btnDoubleView:" destination="O27-kz-QjC" eventType="touchUpInside" id="HfW-a7-GdG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25C-or-edf">
-                                <rect key="frame" x="143" y="273" width="88" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25C-or-edf">
+                                <rect key="frame" x="143.5" y="273" width="88" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="mxK-HR-VfO"/>
                                 </constraints>
@@ -40,12 +41,22 @@
                                     <segue destination="KAf-VC-iEJ" kind="push" id="xhr-iw-FUU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-rX-Cwt">
+                                <rect key="frame" x="112" y="374" width="150" height="30"/>
+                                <state key="normal" title="Mixed View Controller"/>
+                                <connections>
+                                    <segue destination="3ZT-lc-qz1" kind="push" id="wp1-mW-zAM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="AEf-rX-Cwt" firstAttribute="top" secondItem="A5s-XM-bRY" secondAttribute="bottom" constant="19" id="DHo-p4-WUb"/>
+                            <constraint firstItem="AEf-rX-Cwt" firstAttribute="leading" secondItem="2ho-Be-arj" secondAttribute="leadingMargin" constant="96" id="SUn-76-7Uf"/>
                             <constraint firstItem="25C-or-edf" firstAttribute="centerX" secondItem="2ho-Be-arj" secondAttribute="centerX" id="doH-J4-I8x"/>
                             <constraint firstItem="25C-or-edf" firstAttribute="top" secondItem="yiu-tp-sJW" secondAttribute="bottom" constant="229" id="qJf-TP-zeN"/>
                             <constraint firstItem="A5s-XM-bRY" firstAttribute="top" secondItem="25C-or-edf" secondAttribute="bottom" constant="23" id="qoC-4d-exm"/>
+                            <constraint firstItem="AEf-rX-Cwt" firstAttribute="centerX" secondItem="A5s-XM-bRY" secondAttribute="centerX" id="v2R-ni-0Dq"/>
                             <constraint firstItem="25C-or-edf" firstAttribute="centerX" secondItem="A5s-XM-bRY" secondAttribute="centerX" id="wBU-Qs-m4T"/>
                         </constraints>
                     </view>
@@ -91,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yGk-JN-qIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-84.057971014492765" y="595.98214285714278"/>
+            <point key="canvasLocation" x="348" y="-194"/>
         </scene>
         <!--Double Web Page View Controller-->
         <scene sceneID="vY8-kt-CaM">
@@ -131,7 +142,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awF-ca-LFP" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-84.057971014492765" y="194.86607142857142"/>
+            <point key="canvasLocation" x="348" y="463"/>
+        </scene>
+        <!--Mixed View Controller-->
+        <scene sceneID="j14-TR-gvL">
+            <objects>
+                <viewController id="3ZT-lc-qz1" customClass="MixedViewController" customModule="WebExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Plg-5t-ha8"/>
+                        <viewControllerLayoutGuide type="bottom" id="aFk-Rv-QTP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kby-Vv-P1R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4B-1p-Uo5">
+                                <rect key="frame" x="16" y="378" width="343" height="269"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fa7-50-sVS">
+                                <rect key="frame" x="89" y="184" width="197" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qZT-C2-JG8"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="London"/>
+                                    <segment title="Paris"/>
+                                    <segment title="Tokyo"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControlValueChanged:" destination="3ZT-lc-qz1" eventType="valueChanged" id="IkW-VG-xCg"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x4B-1p-Uo5" firstAttribute="trailing" secondItem="kby-Vv-P1R" secondAttribute="trailingMargin" id="Zry-ZO-qBY"/>
+                            <constraint firstItem="x4B-1p-Uo5" firstAttribute="top" secondItem="Plg-5t-ha8" secondAttribute="bottom" constant="334" id="bgN-3l-u9a"/>
+                            <constraint firstItem="Fa7-50-sVS" firstAttribute="centerX" secondItem="x4B-1p-Uo5" secondAttribute="centerX" id="mf4-y7-DQ4"/>
+                            <constraint firstItem="aFk-Rv-QTP" firstAttribute="top" secondItem="x4B-1p-Uo5" secondAttribute="bottom" constant="20" id="xWa-cN-rYp"/>
+                            <constraint firstItem="Fa7-50-sVS" firstAttribute="top" secondItem="Plg-5t-ha8" secondAttribute="bottom" constant="140" id="zJR-dA-Fue"/>
+                            <constraint firstItem="x4B-1p-Uo5" firstAttribute="leading" secondItem="kby-Vv-P1R" secondAttribute="leadingMargin" id="zfP-LC-JER"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AGz-ML-0sd"/>
+                    <connections>
+                        <outlet property="segmentControl" destination="Fa7-50-sVS" id="nSQ-Zd-yc0"/>
+                        <outlet property="webView" destination="x4B-1p-Uo5" id="iDY-5P-3At"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JjT-eg-cZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348" y="1167.1664167916042"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
