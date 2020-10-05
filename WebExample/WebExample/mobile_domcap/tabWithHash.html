@@ -8,44 +8,47 @@
 <script type="text/javascript" src="js/W3C.js" ></script>
 <script type="text/javascript" src="js/defaultNativeDomCaptureGesturesConfigurationHammer1.js" ></script>
 <style>
-body {font-family: Arial;}
+  body {
+      font-family: Arial;
+	  background-color: #02a791;
+  }
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
+  /* Style the tab */
+  .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+  }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
+  /* Style the buttons inside the tab */
+  .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+  }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+      background-color: #ddd;
+  }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
+  /* Create an active/current tablink class */
+  .tab button.active {
+      background-color: #ccc;
+  }
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
+  /* Style the tab content */
+  .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+  }
 </style>
 </head>
 <body>
@@ -53,54 +56,74 @@ body {font-family: Arial;}
 <h2>Tabs</h2>
 <p>Click on the buttons inside the tabbed menu:</p>
 
-<div class="tab">
-  <button class="tablinks" id="L1" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" id="P1" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" id="T1" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+<div class="tab" style="display:none;">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
 </div>
 
 <div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England. Please give me a little fog...</p>
-  <p>Fog 1: <input id="fog1" type="text" /></p>
-  <p>Fog 2: <input id="fog2" type="text" /></p>
-  <p>Fog 3: <input id="fog3" type="text" /></p>
+  <h3 id="London_Header">London</h3>
+  <p id="London_desc">London is the capital city of England. Please give me a little fog...</p>
+  <p id="fog1">Fog 1: <input id="fog1" type="text" /></p>
+  <p id="fog2">Fog 2: <input id="fog2" type="text" /></p>
+  <p id="fog3">Fog 3: <input id="fog3" type="text" /></p>
+  <div class="description">
+    <p id="p_london">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in purus ex. Etiam feugiat, enim ac cursus vulputate, quam elit mattis lectus, vel pulvinar est dolor vel nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean eros neque, finibus in rutrum a, pulvinar sit amet erat. Aenean finibus ex vel arcu lobortis, vel blandit leo finibus. Cras congue massa non auctor hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean elit quam, rutrum ut placerat consectetur, aliquam vitae felis. Suspendisse potenti. Aliquam vel massa vel neque semper rhoncus. 
+    </p>
+  </div>
 </div>
 
 <div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France. Please show me some artwork...</p>
-  <p>Artwork 1: <input id="artwork1" type="text" /></p>
-  <p>Artwork 2: <input id="artwork2" type="text" /></p>
-  <p>Artwork 3: <input id="artwork3" type="text" /></p>
+  <h3 id="Paris_Header">Paris</h3>
+  <p id="Paris_desc">Paris is the capital of France. Please show me some artwork...</p>
+  <p id="artwork1">Artwork 1: <input id="artwork1" type="text" /></p>
+  <p id="artwork2">Artwork 2: <input id="artwork2" type="text" /></p>
+  <p id="artwork3">Artwork 3: <input id="artwork3" type="text" /></p>
+  <div class="description">
+    <p id="p_paris">
+      Praesent semper auctor eros sed sagittis. Donec nibh erat, fringilla sit amet massa vitae, vehicula sagittis sem. Praesent sit amet tincidunt sapien. Sed ornare libero ac velit euismod, sed condimentum enim dapibus. Mauris blandit tortor sed posuere tempus. Mauris sem metus, convallis ut nulla eget, euismod porta lacus. Etiam nec cursus magna. Quisque imperdiet, odio non efficitur malesuada, sem sapien dapibus dolor, id imperdiet lectus dui vel risus. Nunc lacinia lectus sit amet ligula dignissim, non pellentesque mauris condimentum. Etiam id lacus sit amet leo mattis vehicula vitae in turpis. Ut in sem pellentesque, hendrerit tortor a, rhoncus augue. 
+    </p>
+  </div>
 </div>
 
 <div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan. Please greeting me nicely...</p>
-  <p>Greeting 1: <input id="greeting1" type="text" /></p>
-  <p>Greeting 2: <input id="greeting2" type="text" /></p>
-  <p>Greeting 3: <input id="greeting3" type="text" /></p>
+  <h3 id="Tokyo_Header">Tokyo</h3>
+  <p id="Tokyo_desc">Tokyo is the capital of Japan. Please greeting me nicely...</p>
+  <p id="greeting1">Greeting 1: <input id="greeting1" type="text" /></p>
+  <p id="greeting2">Greeting 2: <input id="greeting2" type="text" /></p>
+  <p id="greeting3">Greeting 3: <input id="greeting3" type="text" /></p>
+  <div class="description">
+    <p id="p_tokyo">
+      Nullam sit amet magna convallis, consequat risus sed, tempus dui. Donec lacinia vestibulum nisi, vel sollicitudin dui commodo eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ac placerat lorem. Vivamus scelerisque bibendum molestie. Quisque gravida, tellus scelerisque suscipit ornare, justo elit rutrum enim, vel pulvinar lectus enim at nibh. Pellentesque pharetra fermentum libero id elementum. Quisque aliquam nisi id ligula gravida auctor. Quisque eu mauris ante. Phasellus nulla elit, gravida tempus neque sit amet, placerat viverra nisi. 
+    </p>
+  </div>
 </div>
 <ul>
-  <li><a href="#London" onclick="openCity(event, 'London')">London</a></li>
-  <li><a href="#Paris" onclick="openCity(event, 'Paris')">Paris</a></li>
-  <li><a href="#Tokyo" onclick="openCity(event, 'Tokyo')">Tokyo</a></li>
+  <li><a href="#London" id="btn_London" onclick="openCity(event, 'London')">London</a></li>
+  <li><a href="#Paris" id="btn_Paris" onclick="openCity(event, 'Paris')">Paris</a></li>
+  <li><a href="#Tokyo" id="btn_Tokyo" onclick="openCity(event, 'Tokyo')">Tokyo</a></li>
 </ul>
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  var currentSV = "root";
+  function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+      TLT.logScreenviewUnload(currentSV);
+      currentSV = "#"+cityName;
+      TLT.logScreenviewLoad(currentSV);
+
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
 </script>
    
 </body>

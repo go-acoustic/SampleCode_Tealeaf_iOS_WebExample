@@ -25,21 +25,21 @@ class MixedViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        webView.evaluateJavaScript("document.getElementById('L1').click()", completionHandler: nil)
+        webView.evaluateJavaScript("document.getElementById('btn_London').click()", completionHandler: nil)
     }
 
     @IBAction func segmentControlValueChanged(_ sender: Any) {
         if( self.segmentControl.selectedSegmentIndex == 0 )
         {
-            webView.evaluateJavaScript("document.getElementById('L1').click()", completionHandler: nil)
+            webView.evaluateJavaScript("document.getElementById('btn_London').click()", completionHandler: nil)
         }
         else if( self.segmentControl.selectedSegmentIndex == 1 )
         {
-            webView.evaluateJavaScript("document.getElementById('P1').click()", completionHandler: nil)
+            webView.evaluateJavaScript("document.getElementById('btn_Paris').click()", completionHandler: nil)
         }
         else if( self.segmentControl.selectedSegmentIndex == 2 )
         {
-            webView.evaluateJavaScript("document.getElementById('T1').click()", completionHandler: nil)
+            webView.evaluateJavaScript("document.getElementById('btn_Tokyo').click()", completionHandler: nil)
         }
     }
     /*
