@@ -29,17 +29,26 @@ class MixedViewController: UIViewController {
     }
 
     @IBAction func segmentControlValueChanged(_ sender: Any) {
+        let theWebView = self.webView
         if( self.segmentControl.selectedSegmentIndex == 0 )
         {
-            webView.evaluateJavaScript("document.getElementById('btn_London').click()", completionHandler: nil)
+            //theWebView!.evaluateJavaScript("document.getElementById('btn_London').click()", completionHandler: nil)
         }
         else if( self.segmentControl.selectedSegmentIndex == 1 )
         {
-            webView.evaluateJavaScript("document.getElementById('btn_Paris').click()", completionHandler: nil)
+            let alert = UIAlertController(title: "Lets Go To ..", message: "Paris", preferredStyle: .alert)
+                
+                 let ok = UIAlertAction(title: "OK", style: .default, handler: { action in
+                    //theWebView!.evaluateJavaScript("document.getElementById('btn_Paris').click()", completionHandler: nil)
+                 })
+                 alert.addAction(ok)
+                 DispatchQueue.main.async(execute: {
+                    self.present(alert, animated: true)
+            })
         }
         else if( self.segmentControl.selectedSegmentIndex == 2 )
         {
-            webView.evaluateJavaScript("document.getElementById('btn_Tokyo').click()", completionHandler: nil)
+            //webView.evaluateJavaScript("document.getElementById('btn_Tokyo').click()", completionHandler: nil)
         }
     }
     /*
