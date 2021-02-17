@@ -348,17 +348,11 @@
 				"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-frameworks.sh",
 				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework",
 				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework",
-				"${BUILT_PRODUCTS_DIR}/Shake2TealeafSettingsDebug/Shake2TealeafSettingsDebug.framework",
-				"${PODS_ROOT}/TealeafSHA2Debug/SDKs/iOS/Debug/TealeafSHA2Hash.framework",
-				"${PODS_ROOT}/TealeafSHA2Debug/SDKs/iOS/Debug/TealeafSHA2Hash.framework.dSYM",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EOCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tealeaf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shake2TealeafSettingsDebug.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TealeafSHA2Hash.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/TealeafSHA2Hash.framework.dSYM",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
