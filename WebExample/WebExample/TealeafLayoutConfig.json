@@ -1,0 +1,59 @@
+{
+    "AutoLayout": {
+        "IBMGlobalScreenSettings":{
+            "ScreenChange": true,
+            "DisplayName": "",
+            "CaptureLayoutDelay": 500,
+            "ScreenShot": false,
+            "NumberOfWebViews": 0,
+            "CaptureUserEvents": true,
+            "CaptureScreenVisits": false,
+            "CaptureLayoutOn": 2,
+            "CaptureScreenshotOn": 0
+        },
+        "StartViewController":{
+            "ScreenChange": true,
+            "DisplayName": "Start",
+            "CaptureLayoutDelay": 0,
+            "ScreenShot": false,
+            "NumberOfWebViews": 0,
+            "CaptureUserEvents": true,
+            "CaptureScreenVisits": false,
+            "CaptureLayoutOn": 2,
+            "CaptureScreenshotOn": 0
+        },
+        "WEWKWebViewController": {
+            "ScreenChange": true,
+            "DisplayName": "WKWebView",
+            "CaptureLayoutDelay": 500,
+            "ScreenShot": false,
+            "NumberOfWebViews": 1,
+            "CaptureUserEvents": true,
+            "CaptureScreenVisits": false,
+            "CaptureLayoutOn": 2,
+            "CaptureScreenshotOn": 0
+        },
+        "DoubleWebPageViewController": {
+            "ScreenChange": true,
+            "DisplayName": "Multi WKWebView",
+            "CaptureLayoutDelay": 500,
+            "ScreenShot": false,
+            "NumberOfWebViews": 2,
+            "CaptureUserEvents": true,
+            "CaptureScreenVisits": false,
+            "CaptureLayoutOn": 2,
+            "CaptureScreenshotOn": 0
+        }
+    },
+    "AppendMapIds": {
+        "[w,9290],[v,0]": {
+            "mid": "ASimpleUIView"
+        },
+        "tag2999999": {
+            "mid": "giveAdditionalId1"
+        },
+        "idxPathValue": {
+            "mid": "giveAdditionalId2"
+        }
+    }
+}
