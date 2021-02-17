@@ -20,31 +20,21 @@
 		63C82C692303568800743560 /* mobile_domcap in Resources */ = {isa = PBXBuildFile; fileRef = AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */; };
 		63DE021A25247D0C00807DD3 /* MixedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE021925247D0C00807DD3 /* MixedViewController.swift */; };
 		66A0CC9219E72E3500B74273 /* WebExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC9119E72E3500B74273 /* WebExampleTests.m */; };
-		6B5609BDFF873EEBC9F76F51 /* Pods_WebExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7723F626E39B3CB2966E50 /* Pods_WebExample.framework */; };
+		C2ACC72B00FC804AB74987CD /* Pods_WebExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A2B34452E7E5CF5094DA5 /* Pods_WebExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03D20C94A8AC365E6F3A4C9C /* Pods-WebExampleP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExampleP.debug.xcconfig"; path = "Target Support Files/Pods-WebExampleP/Pods-WebExampleP.debug.xcconfig"; sourceTree = "<group>"; };
-		3A18450E9254CB0775FE8FCC /* libPods-WebExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C617D6125A7DBCDCFB711B4 /* Pods-WebExampleUsingCocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExampleUsingCocoaPods.debug.xcconfig"; path = "Target Support Files/Pods-WebExampleUsingCocoaPods/Pods-WebExampleUsingCocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
-		4C7723F626E39B3CB2966E50 /* Pods_WebExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D002840F13E88B9F7EA70B8 /* Pods-WebExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.release.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.release.xcconfig"; sourceTree = "<group>"; };
+		44CBE87FE4BA41C552AC7060 /* Pods-WebExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.debug.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.debug.xcconfig"; sourceTree = "<group>"; };
 		636B3A4A23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TealeafEarlyLoads.h"; sourceTree = "<group>"; };
 		636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TealeafEarlyLoads.m"; sourceTree = "<group>"; };
 		63C82C6F2303568800743560 /* WebExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		63C82C702303568800743560 /* WebExampleP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WebExampleP-Info.plist"; path = "/Users/sdamale/dev/publicgit/SampleCode_Tealeaf_iOS_WebExample/WebExample/WebExampleP-Info.plist"; sourceTree = "<absolute>"; };
 		63DE021825247D0C00807DD3 /* WebExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		63DE021925247D0C00807DD3 /* MixedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedViewController.swift; sourceTree = "<group>"; };
 		63FEDCAD1CD734B800679E41 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		63FEDCB71CD73BC300679E41 /* WEWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEWKWebViewController.h; sourceTree = "<group>"; };
 		63FEDCB81CD73BC300679E41 /* WEWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEWKWebViewController.m; sourceTree = "<group>"; };
 		661DFD381DB1A4CE005CD73F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		662B002A1F87175D0065A770 /* TLFResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TLFResources.bundle; sourceTree = "<group>"; };
-		662B002D1F87185B0065A770 /* EOCoreSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EOCoreSettings.bundle; sourceTree = "<group>"; };
 		6633A51319EEFA3700623BA5 /* WebExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebExample-Prefix.pch"; sourceTree = "<group>"; };
-		6681EBEB1F97C9BB0069D0F3 /* libEOCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEOCore.a; sourceTree = "<group>"; };
-		6681EBEC1F97C9BB0069D0F3 /* Tealeaf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tealeaf.framework; sourceTree = "<group>"; };
-		668AFCCD1FAAAA1500936434 /* EOApplicationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOApplicationHelper.h; sourceTree = "<group>"; };
 		66A0CC7619E72E3400B74273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66A0CC7719E72E3400B74273 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66A0CC7919E72E3400B74273 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,21 +53,15 @@
 		66A0CCB019E7398700B74273 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		66A0CCB219E7399000B74273 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		66A0CCB419E7399D00B74273 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		6AA64A50266E9062C3D3BBE4 /* Pods-WebExampleP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExampleP.release.xcconfig"; path = "Target Support Files/Pods-WebExampleP/Pods-WebExampleP.release.xcconfig"; sourceTree = "<group>"; };
-		722F7522A27C9647A35B8AAA /* Pods-WebExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.debug.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.debug.xcconfig"; sourceTree = "<group>"; };
-		7D045D2184AF3B17B7EABB02 /* libPods-WebExampleP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebExampleP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		89029724F288A011E9CB20ED /* Pods-WebExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-WebExampleTests/Pods-WebExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		841A2B34452E7E5CF5094DA5 /* Pods_WebExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1CBDE71D00880A00B9245E /* WebExampleSessionIdGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebExampleSessionIdGenerator.h; sourceTree = "<group>"; };
 		8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebExampleSessionIdGenerator.m; sourceTree = "<group>"; };
-		9316DB35E808089AD1C47011 /* Pods-WebExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExampleTests.release.xcconfig"; path = "Target Support Files/Pods-WebExampleTests/Pods-WebExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		990BEA2D248EBE33004D4B7B /* WebExampleUsingCocoaPods copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WebExampleUsingCocoaPods copy-Info.plist"; path = "/Users/ohernandez@us.ibm.com/git/github/SampleCode_Tealeaf_iOS_WebExample/WebExample/WebExampleUsingCocoaPods copy-Info.plist"; sourceTree = "<absolute>"; };
 		99457DE4248EBBA10042CA71 /* EOApplicationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EOApplicationHelper.h; path = Pods/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/Headers/EOApplicationHelper.h; sourceTree = "<group>"; };
-		99457DE6248EBC9D0042CA71 /* libPods-WebExampleUsingCocoaPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-WebExampleUsingCocoaPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B74E4225D304AB0080242E /* TealeafLayoutConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TealeafLayoutConfig.json; sourceTree = "<group>"; };
+		AD66ECB09DC67705152E081C /* Pods-WebExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.release.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.release.xcconfig"; sourceTree = "<group>"; };
 		AEA1F48D1BDFE9E700672AFE /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		AEA1F48E1BDFE9E700672AFE /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mobile_domcap; sourceTree = "<group>"; };
-		CF62AA74617CF9B10D15AC10 /* Pods-WebExampleUsingCocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExampleUsingCocoaPods.release.xcconfig"; path = "Target Support Files/Pods-WebExampleUsingCocoaPods/Pods-WebExampleUsingCocoaPods.release.xcconfig"; sourceTree = "<group>"; };
-		FC89C1DBCF154310FBFBA750 /* libPods-WebExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B5609BDFF873EEBC9F76F51 /* Pods_WebExample.framework in Frameworks */,
+				C2ACC72B00FC804AB74987CD /* Pods_WebExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,9 +100,7 @@
 				66A0CC7419E72E3400B74273 /* WebExample */,
 				66A0CC8E19E72E3500B74273 /* WebExampleTests */,
 				66A0CC7319E72E3400B74273 /* Products */,
-				63C82C702303568800743560 /* WebExampleP-Info.plist */,
 				89E59BC43B58D0E6D0E2E7D4 /* Pods */,
-				990BEA2D248EBE33004D4B7B /* WebExampleUsingCocoaPods copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				636B3A4F23304AA5007A3A19 /* Sources */,
-				66EE37341E89CC0300656C64 /* TealeafSDK */,
+				66EE37341E89CC0300656C64 /* PatchTealeafSDK */,
 				66FD3A2F19EF209100917A97 /* Web */,
 				66A0CC7919E72E3400B74273 /* AppDelegate.h */,
 				66A0CC7A19E72E3400B74273 /* AppDelegate.m */,
@@ -187,7 +169,6 @@
 		66A0CCB819E739C700B74273 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99457DE6248EBC9D0042CA71 /* libPods-WebExampleUsingCocoaPods.a */,
 				661DFD381DB1A4CE005CD73F /* libz.tbd */,
 				63FEDCAD1CD734B800679E41 /* WebKit.framework */,
 				66A0CCB419E7399D00B74273 /* SystemConfiguration.framework */,
@@ -196,24 +177,17 @@
 				66A0CCAE19E7397F00B74273 /* CoreTelephony.framework */,
 				66A0CCAC19E7397600B74273 /* UIKit.framework */,
 				66A0CCAA19E7396F00B74273 /* Foundation.framework */,
-				FC89C1DBCF154310FBFBA750 /* libPods-WebExample.a */,
-				7D045D2184AF3B17B7EABB02 /* libPods-WebExampleP.a */,
-				3A18450E9254CB0775FE8FCC /* libPods-WebExampleTests.a */,
-				4C7723F626E39B3CB2966E50 /* Pods_WebExample.framework */,
+				841A2B34452E7E5CF5094DA5 /* Pods_WebExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		66EE37341E89CC0300656C64 /* TealeafSDK */ = {
+		66EE37341E89CC0300656C64 /* PatchTealeafSDK */ = {
 			isa = PBXGroup;
 			children = (
-				6681EBEC1F97C9BB0069D0F3 /* Tealeaf.framework */,
-				668AFCCD1FAAAA1500936434 /* EOApplicationHelper.h */,
-				6681EBEB1F97C9BB0069D0F3 /* libEOCore.a */,
-				662B002D1F87185B0065A770 /* EOCoreSettings.bundle */,
-				662B002A1F87175D0065A770 /* TLFResources.bundle */,
+				99B74E4225D304AB0080242E /* TealeafLayoutConfig.json */,
 			);
-			name = TealeafSDK;
+			name = PatchTealeafSDK;
 			sourceTree = "<group>";
 		};
 		66FD3A2F19EF209100917A97 /* Web */ = {
@@ -227,14 +201,8 @@
 		89E59BC43B58D0E6D0E2E7D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				722F7522A27C9647A35B8AAA /* Pods-WebExample.debug.xcconfig */,
-				4D002840F13E88B9F7EA70B8 /* Pods-WebExample.release.xcconfig */,
-				03D20C94A8AC365E6F3A4C9C /* Pods-WebExampleP.debug.xcconfig */,
-				6AA64A50266E9062C3D3BBE4 /* Pods-WebExampleP.release.xcconfig */,
-				89029724F288A011E9CB20ED /* Pods-WebExampleTests.debug.xcconfig */,
-				9316DB35E808089AD1C47011 /* Pods-WebExampleTests.release.xcconfig */,
-				3C617D6125A7DBCDCFB711B4 /* Pods-WebExampleUsingCocoaPods.debug.xcconfig */,
-				CF62AA74617CF9B10D15AC10 /* Pods-WebExampleUsingCocoaPods.release.xcconfig */,
+				44CBE87FE4BA41C552AC7060 /* Pods-WebExample.debug.xcconfig */,
+				AD66ECB09DC67705152E081C /* Pods-WebExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -256,13 +224,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63C82C6C2303568800743560 /* Build configuration list for PBXNativeTarget "WebExample" */;
 			buildPhases = (
-				2F4F46E0CB756793822EBA67 /* [CP] Check Pods Manifest.lock */,
+				D3541748CF886520B90DB020 /* [CP] Check Pods Manifest.lock */,
+				99B74E4825D305F50080242E /* Run Script - Update layout */,
 				63C82C4F2303568800743560 /* Sources */,
 				63C82C582303568800743560 /* Frameworks */,
 				63C82C632303568800743560 /* Resources */,
 				63C82C6A2303568800743560 /* Headers */,
-				4A323636F159D07BAF9A79AA /* [CP] Embed Pods Frameworks */,
-				37552241E9A5C95A343B2DED /* [CP] Copy Pods Resources */,
+				85A9389BB6DFE5D7453181DA /* [CP] Embed Pods Frameworks */,
+				62992DE028DEA77023AECEB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,8 +269,11 @@
 				ORGANIZATIONNAME = IBM;
 				TargetAttributes = {
 					63C82C4E2303568800743560 = {
-						DevelopmentTeam = PP64RT7P8Z;
+						DevelopmentTeam = QXQ67VKX2B;
 						LastSwiftMigration = 1200;
+					};
+					66A0CC8A19E72E3500B74273 = {
+						DevelopmentTeam = QXQ67VKX2B;
 					};
 				};
 			};
@@ -347,29 +319,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F4F46E0CB756793822EBA67 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WebExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		37552241E9A5C95A343B2DED /* [CP] Copy Pods Resources */ = {
+		62992DE028DEA77023AECEB5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -389,7 +339,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4A323636F159D07BAF9A79AA /* [CP] Embed Pods Frameworks */ = {
+		85A9389BB6DFE5D7453181DA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,15 +348,61 @@
 				"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-frameworks.sh",
 				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework",
 				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework",
+				"${BUILT_PRODUCTS_DIR}/Shake2TealeafSettingsDebug/Shake2TealeafSettingsDebug.framework",
+				"${PODS_ROOT}/TealeafSHA2Debug/SDKs/iOS/Debug/TealeafSHA2Hash.framework",
+				"${PODS_ROOT}/TealeafSHA2Debug/SDKs/iOS/Debug/TealeafSHA2Hash.framework.dSYM",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EOCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tealeaf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shake2TealeafSettingsDebug.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TealeafSHA2Hash.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/TealeafSHA2Hash.framework.dSYM",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B74E4825D305F50080242E /* Run Script - Update layout */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Update layout";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Since pod has default layout, need to replace it with correct values for this application.\ncp -f ${PROJECT_DIR}/WebExample/TealeafLayoutConfig.json ${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle/TealeafLayoutConfig.json\n\n";
+		};
+		D3541748CF886520B90DB020 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -459,13 +455,13 @@
 /* Begin XCBuildConfiguration section */
 		63C82C6D2303568800743560 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 722F7522A27C9647A35B8AAA /* Pods-WebExample.debug.xcconfig */;
+			baseConfigurationReference = 44CBE87FE4BA41C552AC7060 /* Pods-WebExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 10.0.1;
-				DEVELOPMENT_TEAM = PP64RT7P8Z;
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
 				INFOPLIST_FILE = "WebExampleP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -481,13 +477,13 @@
 		};
 		63C82C6E2303568800743560 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D002840F13E88B9F7EA70B8 /* Pods-WebExample.release.xcconfig */;
+			baseConfigurationReference = AD66ECB09DC67705152E081C /* Pods-WebExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 10.0.1;
-				DEVELOPMENT_TEAM = PP64RT7P8Z;
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
 				INFOPLIST_FILE = "WebExampleP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -613,6 +609,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -633,6 +630,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = WebExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
