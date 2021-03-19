@@ -3,7 +3,7 @@
 //  WebExample
 //
 //  Created by Shridhar Damale on 9/30/20.
-//  Copyright © 2020 IBM. All rights reserved.
+//  Copyright (C) 2020 Acoustic, L.P. All rights reserved.
 //
 
 import UIKit
