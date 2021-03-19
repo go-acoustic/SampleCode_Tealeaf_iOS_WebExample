@@ -40,11 +40,11 @@ Note that use_frameworks is commented
 
 `# use_frameworks!`
 
-In the respective targets for your project in the Podfile add the following line if you want to use IBM Tealeaf SDK's release version
+In the respective targets for your project in the Podfile add the following line if you want to use Tealeaf SDK's release version
 
 `pod 'IBMTealeaf'`
 
-In the respective targets for your project in the Podfile add the following line if you want to use IBM Tealeaf SDK's debug version
+In the respective targets for your project in the Podfile add the following line if you want to use Tealeaf SDK's debug version
 
 `pod 'IBMTealeafDebug'`
 
@@ -69,7 +69,7 @@ Go to `TealeafBasicConfig.plist`, then update `AppKey` for correct app key if yo
 
 ## Troubleshooting
 
-If you are using Debug version of IBM Tealeaf SDK. i.e. `pod 'IBMTealeafDebug'` , then you may edit your project's scheme in XCode and add environmental variable `EODebug`and set its value to 1; also add environmental variable `TLF_DEBUG` and set its value to 1. This will make the SDK to start writing debug logs to your xcode console window. If and when you want to report issues, the Tealeaf support engineers will ask you for these logs.
+If you are using Debug version of Tealeaf SDK. i.e. `pod 'IBMTealeafDebug'` , then you may edit your project's scheme in XCode and add environmental variable `EODebug`and set its value to 1; also add environmental variable `TLF_DEBUG` and set its value to 1. This will make the SDK to start writing debug logs to your xcode console window. If and when you want to report issues, the Tealeaf support engineers will ask you for these logs.
 
 
 ## Versioning
