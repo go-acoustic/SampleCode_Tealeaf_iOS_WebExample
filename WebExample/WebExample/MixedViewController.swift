@@ -29,7 +29,7 @@ class MixedViewController: UIViewController {
     }
 
     @IBAction func segmentControlValueChanged(_ sender: Any) {
-        let theWebView = self.webView
+//        let theWebView = self.webView
         if( self.segmentControl.selectedSegmentIndex == 0 )
         {
             //theWebView!.evaluateJavaScript("document.getElementById('btn_London').click()", completionHandler: nil)
