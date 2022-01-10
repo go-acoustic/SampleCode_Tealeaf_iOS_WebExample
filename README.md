@@ -1,13 +1,13 @@
 # SampleCode_Tealeaf_iOS_WebExample
 # iOS WebExample instrumented with Tealeaf sdk.
 
-**DOM Diff** is now supported in **SaaS** only. This application has **DOM Diff** enabled. If you need to test for onpremise system. You will need to change from:
+**DOM Diff** is now supported. This application has **DOM Diff** enabled. You will need to change from:
 
-**diffEnabled: true,**
+**diffEnabled: false,**
 
 to 
 
-**diffEnabled: false,**
+**diffEnabled: true,**
 
 ## In the following files:
 
@@ -32,9 +32,9 @@ Go to the sample app location
 
 `cd WebExample`
 
-Also note the platform in the Podfile iOS 9
+Also note the platform in the Podfile iOS 12
 
-`platform :ios, '9.0'`
+`platform :ios, '12.0'`
 
 Note that use_frameworks is commented
 
