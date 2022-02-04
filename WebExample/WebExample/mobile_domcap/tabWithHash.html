@@ -55,6 +55,11 @@
 
 <h2>Tabs</h2>
 <p>Click on the buttons inside the tabbed menu:</p>
+<ul>
+  <li><a href="#London" id="btn_London" onclick="openCity(event, 'London')">London</a></li>
+  <li><a href="#Paris" id="btn_Paris" onclick="openCity(event, 'Paris')">Paris</a></li>
+  <li><a href="#Tokyo" id="btn_Tokyo" onclick="openCity(event, 'Tokyo')">Tokyo</a></li>
+</ul>
 
 <div class="tab" style="display:none;">
   <button class="tablinks" onclick="openCity(event, 'London')">London</button>
@@ -100,13 +105,8 @@
     </p>
   </div>
 </div>
-<ul>
-  <li><a href="#London" id="btn_London" onclick="openCity(event, 'London')">London</a></li>
-  <li><a href="#Paris" id="btn_Paris" onclick="openCity(event, 'Paris')">Paris</a></li>
-  <li><a href="#Tokyo" id="btn_Tokyo" onclick="openCity(event, 'Tokyo')">Tokyo</a></li>
-</ul>
 <script>
-  var currentSV = "root";
+  // var currentSV = "root";
   function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -119,9 +119,9 @@
       }
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
-      TLT.logScreenviewUnload(currentSV);
+      /*TLT.logScreenviewUnload(currentSV);
       currentSV = "#"+cityName;
-      TLT.logScreenviewLoad(currentSV);
+      TLT.logScreenviewLoad(currentSV);*/
 
   }
 </script>

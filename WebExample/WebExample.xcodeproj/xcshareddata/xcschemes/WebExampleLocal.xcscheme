@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "63C82C4E2303568800743560"
-               BuildableName = "WebExample.app"
-               BlueprintName = "WebExample"
+               BlueprintIdentifier = "993156692742FD5D0073BD19"
+               BuildableName = "WebExampleLocal.app"
+               BlueprintName = "WebExampleLocal"
                ReferencedContainer = "container:WebExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,15 +27,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "63C82C4E2303568800743560"
-            BuildableName = "WebExample.app"
-            BlueprintName = "WebExample"
-            ReferencedContainer = "container:WebExample.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
       </Testables>
    </TestAction>
@@ -53,20 +44,20 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "63C82C4E2303568800743560"
-            BuildableName = "WebExample.app"
-            BlueprintName = "WebExample"
+            BlueprintIdentifier = "993156692742FD5D0073BD19"
+            BuildableName = "WebExampleLocal.app"
+            BlueprintName = "WebExampleLocal"
             ReferencedContainer = "container:WebExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
-            key = "TLF_DEBUG"
+            key = "EODebug"
             value = "1"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
-            key = "EODebug"
+            key = "TLF_DEBUG"
             value = "1"
             isEnabled = "YES">
          </EnvironmentVariable>
@@ -82,9 +73,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "63C82C4E2303568800743560"
-            BuildableName = "WebExample.app"
-            BlueprintName = "WebExample"
+            BlueprintIdentifier = "993156692742FD5D0073BD19"
+            BuildableName = "WebExampleLocal.app"
+            BlueprintName = "WebExampleLocal"
             ReferencedContainer = "container:WebExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

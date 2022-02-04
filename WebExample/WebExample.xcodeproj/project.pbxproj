@@ -20,11 +20,82 @@
 		63C82C692303568800743560 /* mobile_domcap in Resources */ = {isa = PBXBuildFile; fileRef = AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */; };
 		63DE021A25247D0C00807DD3 /* MixedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE021925247D0C00807DD3 /* MixedViewController.swift */; };
 		66A0CC9219E72E3500B74273 /* WebExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC9119E72E3500B74273 /* WebExampleTests.m */; };
-		C2ACC72B00FC804AB74987CD /* Pods_WebExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841A2B34452E7E5CF5094DA5 /* Pods_WebExample.framework */; };
+		70113240642996DFED07327D /* Pods_WebExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD08FDB7AB8E901FA6E629BB /* Pods_WebExample.framework */; };
+		9931566D2742FD5D0073BD19 /* NSObject+TealeafEarlyLoads.m in Sources */ = {isa = PBXBuildFile; fileRef = 636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */; };
+		9931566E2742FD5D0073BD19 /* DoubleWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7D19E72E3500B74273 /* DoubleWebPageViewController.m */; };
+		9931566F2742FD5D0073BD19 /* MixedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE021925247D0C00807DD3 /* MixedViewController.swift */; };
+		993156702742FD5D0073BD19 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1F48E1BDFE9E700672AFE /* StartViewController.m */; };
+		993156712742FD5D0073BD19 /* WebExampleSessionIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */; };
+		993156722742FD5D0073BD19 /* WEWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FEDCB81CD73BC300679E41 /* WEWKWebViewController.m */; };
+		993156732742FD5D0073BD19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7A19E72E3400B74273 /* AppDelegate.m */; };
+		993156742742FD5D0073BD19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0CC7719E72E3400B74273 /* main.m */; };
+		993156782742FD5D0073BD19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC7F19E72E3500B74273 /* Main.storyboard */; };
+		993156792742FD5D0073BD19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC8419E72E3500B74273 /* LaunchScreen.xib */; };
+		9931567A2742FD5D0073BD19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC8219E72E3500B74273 /* Images.xcassets */; };
+		9931567B2742FD5D0073BD19 /* mobile_domcap in Resources */ = {isa = PBXBuildFile; fileRef = AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */; };
+		993156922742FD820073BD19 /* Tealeaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993156582742E09E0073BD19 /* Tealeaf.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		993156552742E09E0073BD19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 66FD56BA1A3A4BD600E3827C;
+			remoteInfo = Tealeaf;
+		};
+		993156572742E09E0073BD19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99C6CC5A25CB9FF5004298D8;
+			remoteInfo = XCTealeaf;
+		};
+		993156592742E09E0073BD19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99610C0A20A10F3100F412B8;
+			remoteInfo = TealeafReactNative;
+		};
+		9931565B2742E09E0073BD19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99865E0F25E0916100B905BE;
+			remoteInfo = XCTealeafReactNative;
+		};
+		9931565D2742E09E0073BD19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 66FD56C51A3A4BD600E3827C;
+			remoteInfo = TealeafTests;
+		};
+		9931565F2742E09E0073BD19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 992D4ABB25E06AED00476193;
+			remoteInfo = XCTealeafTests;
+		};
+		993156612742E09E0073BD19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 66FD56E01A3A4F7C00E3827C;
+			remoteInfo = TealeafTestApp;
+		};
+		993156632742E09E0073BD19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 992D4B0125E06B0700476193;
+			remoteInfo = XCTealeafTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		44CBE87FE4BA41C552AC7060 /* Pods-WebExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.debug.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.debug.xcconfig"; sourceTree = "<group>"; };
 		636B3A4A23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TealeafEarlyLoads.h"; sourceTree = "<group>"; };
 		636B3A4B23303CDF007A3A19 /* NSObject+TealeafEarlyLoads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TealeafEarlyLoads.m"; sourceTree = "<group>"; };
 		63C82C6F2303568800743560 /* WebExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,15 +124,17 @@
 		66A0CCB019E7398700B74273 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		66A0CCB219E7399000B74273 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		66A0CCB419E7399D00B74273 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		841A2B34452E7E5CF5094DA5 /* Pods_WebExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1CBDE71D00880A00B9245E /* WebExampleSessionIdGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebExampleSessionIdGenerator.h; sourceTree = "<group>"; };
 		8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebExampleSessionIdGenerator.m; sourceTree = "<group>"; };
-		99457DE4248EBBA10042CA71 /* EOApplicationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EOApplicationHelper.h; path = Pods/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/Headers/EOApplicationHelper.h; sourceTree = "<group>"; };
+		993156442742E09E0073BD19 /* Tealeaf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tealeaf.xcodeproj; path = "../../iOS-SDK/iOSSrc/Tealeaf/Tealeaf.xcodeproj"; sourceTree = "<group>"; };
+		993156822742FD5D0073BD19 /* WebExampleLocal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebExampleLocal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B74E4225D304AB0080242E /* TealeafLayoutConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TealeafLayoutConfig.json; sourceTree = "<group>"; };
-		AD66ECB09DC67705152E081C /* Pods-WebExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.release.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.release.xcconfig"; sourceTree = "<group>"; };
+		A994A18EC97FE8421017FFDB /* Pods-WebExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.release.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.release.xcconfig"; sourceTree = "<group>"; };
+		AD08FDB7AB8E901FA6E629BB /* Pods_WebExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA1F48D1BDFE9E700672AFE /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		AEA1F48E1BDFE9E700672AFE /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mobile_domcap; sourceTree = "<group>"; };
+		BCC410861E17B07EE0796178 /* Pods-WebExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.debug.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2ACC72B00FC804AB74987CD /* Pods_WebExample.framework in Frameworks */,
+				70113240642996DFED07327D /* Pods_WebExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +150,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993156752742FD5D0073BD19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993156922742FD820073BD19 /* Tealeaf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,12 +176,11 @@
 		66A0CC6919E72E3400B74273 = {
 			isa = PBXGroup;
 			children = (
-				99457DE4248EBBA10042CA71 /* EOApplicationHelper.h */,
 				66A0CCB819E739C700B74273 /* Frameworks */,
 				66A0CC7419E72E3400B74273 /* WebExample */,
 				66A0CC8E19E72E3500B74273 /* WebExampleTests */,
 				66A0CC7319E72E3400B74273 /* Products */,
-				89E59BC43B58D0E6D0E2E7D4 /* Pods */,
+				BE6FC8BD4D1D12A7E73241A3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +189,7 @@
 			children = (
 				66A0CC8B19E72E3500B74273 /* WebExampleTests.xctest */,
 				63C82C6F2303568800743560 /* WebExample.app */,
+				993156822742FD5D0073BD19 /* WebExampleLocal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,7 +258,8 @@
 				66A0CCAE19E7397F00B74273 /* CoreTelephony.framework */,
 				66A0CCAC19E7397600B74273 /* UIKit.framework */,
 				66A0CCAA19E7396F00B74273 /* Foundation.framework */,
-				841A2B34452E7E5CF5094DA5 /* Pods_WebExample.framework */,
+				993156442742E09E0073BD19 /* Tealeaf.xcodeproj */,
+				AD08FDB7AB8E901FA6E629BB /* Pods_WebExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,11 +280,26 @@
 			name = Web;
 			sourceTree = "<group>";
 		};
-		89E59BC43B58D0E6D0E2E7D4 /* Pods */ = {
+		993156452742E09E0073BD19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44CBE87FE4BA41C552AC7060 /* Pods-WebExample.debug.xcconfig */,
-				AD66ECB09DC67705152E081C /* Pods-WebExample.release.xcconfig */,
+				993156562742E09E0073BD19 /* libTealeaf.a */,
+				993156582742E09E0073BD19 /* Tealeaf.framework */,
+				9931565A2742E09E0073BD19 /* libTealeafReactNative.a */,
+				9931565C2742E09E0073BD19 /* TealeafReactNative.framework */,
+				9931565E2742E09E0073BD19 /* TealeafTests.xctest */,
+				993156602742E09E0073BD19 /* XCTealeafTests.xctest */,
+				993156622742E09E0073BD19 /* TealeafTestApp.app */,
+				993156642742E09E0073BD19 /* XCTealeafTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE6FC8BD4D1D12A7E73241A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCC410861E17B07EE0796178 /* Pods-WebExample.debug.xcconfig */,
+				A994A18EC97FE8421017FFDB /* Pods-WebExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -217,6 +314,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9931567C2742FD5D0073BD19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -224,14 +328,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63C82C6C2303568800743560 /* Build configuration list for PBXNativeTarget "WebExample" */;
 			buildPhases = (
-				D3541748CF886520B90DB020 /* [CP] Check Pods Manifest.lock */,
+				D48B2F73CA48F56947CBDBA7 /* [CP] Check Pods Manifest.lock */,
 				99B74E4825D305F50080242E /* Run Script - Update layout */,
 				63C82C4F2303568800743560 /* Sources */,
 				63C82C582303568800743560 /* Frameworks */,
 				63C82C632303568800743560 /* Resources */,
 				63C82C6A2303568800743560 /* Headers */,
-				85A9389BB6DFE5D7453181DA /* [CP] Embed Pods Frameworks */,
-				62992DE028DEA77023AECEB5 /* [CP] Copy Pods Resources */,
+				ACEAFAB9AB269200C33EB5D4 /* [CP] Embed Pods Frameworks */,
+				C2DADA4C89333AE3178618B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,13 +363,32 @@
 			productReference = 66A0CC8B19E72E3500B74273 /* WebExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		993156692742FD5D0073BD19 /* WebExampleLocal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9931567F2742FD5D0073BD19 /* Build configuration list for PBXNativeTarget "WebExampleLocal" */;
+			buildPhases = (
+				9931566B2742FD5D0073BD19 /* Run Script - Update layout */,
+				9931566C2742FD5D0073BD19 /* Sources */,
+				993156752742FD5D0073BD19 /* Frameworks */,
+				993156772742FD5D0073BD19 /* Resources */,
+				9931567C2742FD5D0073BD19 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebExampleLocal;
+			productName = WebExample;
+			productReference = 993156822742FD5D0073BD19 /* WebExampleLocal.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		66A0CC6A19E72E3400B74273 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = Acoustic;
 				TargetAttributes = {
 					63C82C4E2303568800743560 = {
@@ -275,27 +398,95 @@
 					66A0CC8A19E72E3500B74273 = {
 						DevelopmentTeam = QXQ67VKX2B;
 					};
+					993156692742FD5D0073BD19 = {
+						DevelopmentTeam = QXQ67VKX2B;
+					};
 				};
 			};
 			buildConfigurationList = 66A0CC6D19E72E3400B74273 /* Build configuration list for PBXProject "WebExample" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
 			mainGroup = 66A0CC6919E72E3400B74273;
 			productRefGroup = 66A0CC7319E72E3400B74273 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 993156452742E09E0073BD19 /* Products */;
+					ProjectRef = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				66A0CC8A19E72E3500B74273 /* WebExampleTests */,
 				63C82C4E2303568800743560 /* WebExample */,
+				66A0CC8A19E72E3500B74273 /* WebExampleTests */,
+				993156692742FD5D0073BD19 /* WebExampleLocal */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		993156562742E09E0073BD19 /* libTealeaf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTealeaf.a;
+			remoteRef = 993156552742E09E0073BD19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		993156582742E09E0073BD19 /* Tealeaf.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Tealeaf.framework;
+			remoteRef = 993156572742E09E0073BD19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9931565A2742E09E0073BD19 /* libTealeafReactNative.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTealeafReactNative.a;
+			remoteRef = 993156592742E09E0073BD19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9931565C2742E09E0073BD19 /* TealeafReactNative.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TealeafReactNative.framework;
+			remoteRef = 9931565B2742E09E0073BD19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9931565E2742E09E0073BD19 /* TealeafTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TealeafTests.xctest;
+			remoteRef = 9931565D2742E09E0073BD19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		993156602742E09E0073BD19 /* XCTealeafTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XCTealeafTests.xctest;
+			remoteRef = 9931565F2742E09E0073BD19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		993156622742E09E0073BD19 /* TealeafTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TealeafTestApp.app;
+			remoteRef = 993156612742E09E0073BD19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		993156642742E09E0073BD19 /* XCTealeafTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = XCTealeafTestApp.app;
+			remoteRef = 993156632742E09E0073BD19 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		63C82C632303568800743560 /* Resources */ = {
@@ -316,48 +507,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		993156772742FD5D0073BD19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993156782742FD5D0073BD19 /* Main.storyboard in Resources */,
+				993156792742FD5D0073BD19 /* LaunchScreen.xib in Resources */,
+				9931567A2742FD5D0073BD19 /* Images.xcassets in Resources */,
+				9931567B2742FD5D0073BD19 /* mobile_domcap in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		62992DE028DEA77023AECEB5 /* [CP] Copy Pods Resources */ = {
+		9931566B2742FD5D0073BD19 /* Run Script - Update layout */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-resources.sh",
-				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework/EOCoreSettings.bundle",
-				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle",
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+			);
+			name = "Run Script - Update layout";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EOCoreSettings.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TLFResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85A9389BB6DFE5D7453181DA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-frameworks.sh",
-				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCore.framework",
-				"${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EOCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tealeaf.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Since pod has default layout, need to replace it with correct values for this application.\n#cp -f ${PROJECT_DIR}/WebExample/TealeafLayoutConfig.json ${PODS_ROOT}/TealeafDebug/SDKs/iOS/Debug/TLFResources.bundle/TealeafLayoutConfig.json\n\n";
 		};
 		99B74E4825D305F50080242E /* Run Script - Update layout */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -375,9 +555,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Since pod has default layout, need to replace it with correct values for this application.\ncp -f ${PROJECT_DIR}/WebExample/TealeafLayoutConfig.json ${PODS_ROOT}/IBMTealeafDebug/SDKs/iOS/Debug/Tealeaf.framework/TLFResources.bundle/TealeafLayoutConfig.json\n\n";
+			shellScript = "# Since pod has default layout, need to replace it with correct values for this application.\ncp -f ${PROJECT_DIR}/WebExample/TealeafLayoutConfig.json ${PODS_ROOT}/TealeafDebug/SDKs/iOS/Debug/TLFResources.bundle/TealeafLayoutConfig.json\n\n";
 		};
-		D3541748CF886520B90DB020 /* [CP] Check Pods Manifest.lock */ = {
+		ACEAFAB9AB269200C33EB5D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/EOCore/EOCore.framework/EOCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Tealeaf/Tealeaf.framework/Tealeaf",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EOCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tealeaf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2DADA4C89333AE3178618B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-resources.sh",
+				"${PODS_ROOT}/EOCoreDebug/SDKs/iOS/Debug/EOCoreSettings.bundle",
+				"${PODS_ROOT}/TealeafDebug/SDKs/iOS/Debug/TLFResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EOCoreSettings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TLFResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D48B2F73CA48F56947CBDBA7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -425,6 +645,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9931566C2742FD5D0073BD19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9931566D2742FD5D0073BD19 /* NSObject+TealeafEarlyLoads.m in Sources */,
+				9931566E2742FD5D0073BD19 /* DoubleWebPageViewController.m in Sources */,
+				9931566F2742FD5D0073BD19 /* MixedViewController.swift in Sources */,
+				993156702742FD5D0073BD19 /* StartViewController.m in Sources */,
+				993156712742FD5D0073BD19 /* WebExampleSessionIdGenerator.m in Sources */,
+				993156722742FD5D0073BD19 /* WEWKWebViewController.m in Sources */,
+				993156732742FD5D0073BD19 /* AppDelegate.m in Sources */,
+				993156742742FD5D0073BD19 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -449,7 +684,7 @@
 /* Begin XCBuildConfiguration section */
 		63C82C6D2303568800743560 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44CBE87FE4BA41C552AC7060 /* Pods-WebExample.debug.xcconfig */;
+			baseConfigurationReference = BCC410861E17B07EE0796178 /* Pods-WebExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -457,7 +692,7 @@
 				CURRENT_PROJECT_VERSION = 10.0.1;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
-				INFOPLIST_FILE = "WebExampleP-Info.plist";
+				INFOPLIST_FILE = WebExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ea.WebExample;
@@ -471,7 +706,7 @@
 		};
 		63C82C6E2303568800743560 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD66ECB09DC67705152E081C /* Pods-WebExample.release.xcconfig */;
+			baseConfigurationReference = A994A18EC97FE8421017FFDB /* Pods-WebExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -479,7 +714,7 @@
 				CURRENT_PROJECT_VERSION = 10.0.1;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
-				INFOPLIST_FILE = "WebExampleP-Info.plist";
+				INFOPLIST_FILE = WebExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ea.WebExample;
@@ -513,6 +748,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -570,6 +806,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -592,6 +829,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "4869dad4-c695-4cf6-be1d-ad1a5123ae1a";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -635,6 +873,47 @@
 			};
 			name = Release;
 		};
+		993156802742FD5D0073BD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 10.0.1;
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
+				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
+				INFOPLIST_FILE = WebExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ea.WebExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "WebExample/WebExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		993156812742FD5D0073BD19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 10.0.1;
+				DEVELOPMENT_TEAM = QXQ67VKX2B;
+				GCC_PREFIX_HEADER = "WebExample/WebExample-Prefix.pch";
+				INFOPLIST_FILE = WebExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ea.WebExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "WebExample/WebExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -661,6 +940,15 @@
 			buildConfigurations = (
 				66A0CC9919E72E3500B74273 /* Debug */,
 				66A0CC9A19E72E3500B74273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9931567F2742FD5D0073BD19 /* Build configuration list for PBXNativeTarget "WebExampleLocal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				993156802742FD5D0073BD19 /* Debug */,
+				993156812742FD5D0073BD19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
