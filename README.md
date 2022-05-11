@@ -1,7 +1,7 @@
 # SampleCode_Tealeaf_iOS_WebExample
 # iOS WebExample instrumented with Tealeaf sdk.
 
-**DOM Diff** is now supported. This application has **DOM Diff** enabled. You will need to change from:
+**DOM Diff** is now supported in **SaaS** only. This application has **DOM Diff** enabled. You will need to change from:
 
 **diffEnabled: false,**
 
