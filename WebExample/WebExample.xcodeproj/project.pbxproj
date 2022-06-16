@@ -34,6 +34,8 @@
 		9931567A2742FD5D0073BD19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A0CC8219E72E3500B74273 /* Images.xcassets */; };
 		9931567B2742FD5D0073BD19 /* mobile_domcap in Resources */ = {isa = PBXBuildFile; fileRef = AEDF2C0C1AD31E6D00A25255 /* mobile_domcap */; };
 		993156922742FD820073BD19 /* Tealeaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993156582742E09E0073BD19 /* Tealeaf.framework */; };
+		999FFAA3285A9FF8003B746E /* WKCookieWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999FFAA2285A9FF8003B746E /* WKCookieWebViewController.swift */; };
+		999FFAA4285A9FF8003B746E /* WKCookieWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999FFAA2285A9FF8003B746E /* WKCookieWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,20 @@
 			remoteGlobalIDString = 992D4B0125E06B0700476193;
 			remoteInfo = XCTealeafTestApp;
 		};
+		999FFAB5285A9FF9003B746E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 990B8E8C27E56383000EC5FA;
+			remoteInfo = XCTealeafReactNativeTests;
+		};
+		999FFAB7285A9FF9003B746E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 993156442742E09E0073BD19 /* Tealeaf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 990B8E0727E54D6C000EC5FA;
+			remoteInfo = XCTealeafReactNativeTestApp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +144,7 @@
 		8F1CBDE81D00880A00B9245E /* WebExampleSessionIdGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebExampleSessionIdGenerator.m; sourceTree = "<group>"; };
 		993156442742E09E0073BD19 /* Tealeaf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tealeaf.xcodeproj; path = "../../iOS-SDK/iOSSrc/Tealeaf/Tealeaf.xcodeproj"; sourceTree = "<group>"; };
 		993156822742FD5D0073BD19 /* WebExampleLocal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebExampleLocal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		999FFAA2285A9FF8003B746E /* WKCookieWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKCookieWebViewController.swift; sourceTree = "<group>"; };
 		99B74E4225D304AB0080242E /* TealeafLayoutConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TealeafLayoutConfig.json; sourceTree = "<group>"; };
 		A994A18EC97FE8421017FFDB /* Pods-WebExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebExample.release.xcconfig"; path = "Target Support Files/Pods-WebExample/Pods-WebExample.release.xcconfig"; sourceTree = "<group>"; };
 		AD08FDB7AB8E901FA6E629BB /* Pods_WebExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +233,7 @@
 				66A0CC8419E72E3500B74273 /* LaunchScreen.xib */,
 				66A0CC7519E72E3400B74273 /* Supporting Files */,
 				63DE021825247D0C00807DD3 /* WebExample-Bridging-Header.h */,
+				999FFAA2285A9FF8003B746E /* WKCookieWebViewController.swift */,
 			);
 			path = WebExample;
 			sourceTree = "<group>";
@@ -289,8 +307,10 @@
 				9931565C2742E09E0073BD19 /* TealeafReactNative.framework */,
 				9931565E2742E09E0073BD19 /* TealeafTests.xctest */,
 				993156602742E09E0073BD19 /* XCTealeafTests.xctest */,
+				999FFAB6285A9FF9003B746E /* XCTealeafReactNativeTests.xctest */,
 				993156622742E09E0073BD19 /* TealeafTestApp.app */,
 				993156642742E09E0073BD19 /* XCTealeafTestApp.app */,
+				999FFAB8285A9FF9003B746E /* XCTealeafReactNativeTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -486,6 +506,20 @@
 			remoteRef = 993156632742E09E0073BD19 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		999FFAB6285A9FF9003B746E /* XCTealeafReactNativeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XCTealeafReactNativeTests.xctest;
+			remoteRef = 999FFAB5285A9FF9003B746E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		999FFAB8285A9FF9003B746E /* XCTealeafReactNativeTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = XCTealeafReactNativeTestApp.app;
+			remoteRef = 999FFAB7285A9FF9003B746E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -564,11 +598,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WebExample/Pods-WebExample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/EOCore/EOCore.framework/EOCore",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Tealeaf/Tealeaf.framework/Tealeaf",
+				"${BUILT_PRODUCTS_DIR}/WKCookieWebView/WKCookieWebView.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/EOCoreDebug/EOCore.framework/EOCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TealeafDebug/Core/Tealeaf.framework/Tealeaf",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WKCookieWebView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EOCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tealeaf.framework",
 			);
@@ -632,6 +668,7 @@
 				63C82C512303568800743560 /* StartViewController.m in Sources */,
 				63C82C532303568800743560 /* WebExampleSessionIdGenerator.m in Sources */,
 				63C82C542303568800743560 /* WEWKWebViewController.m in Sources */,
+				999FFAA3285A9FF8003B746E /* WKCookieWebViewController.swift in Sources */,
 				63C82C562303568800743560 /* AppDelegate.m in Sources */,
 				63C82C572303568800743560 /* main.m in Sources */,
 			);
@@ -655,6 +692,7 @@
 				993156702742FD5D0073BD19 /* StartViewController.m in Sources */,
 				993156712742FD5D0073BD19 /* WebExampleSessionIdGenerator.m in Sources */,
 				993156722742FD5D0073BD19 /* WEWKWebViewController.m in Sources */,
+				999FFAA4285A9FF8003B746E /* WKCookieWebViewController.swift in Sources */,
 				993156732742FD5D0073BD19 /* AppDelegate.m in Sources */,
 				993156742742FD5D0073BD19 /* main.m in Sources */,
 			);

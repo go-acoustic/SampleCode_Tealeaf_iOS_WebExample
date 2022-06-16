@@ -7,7 +7,6 @@ target 'WebExample' do
   use_frameworks!
 
   # Pods for WebExample
-
-   pod 'TealeafDebug'
-
+  pod 'TealeafDebug'
+  pod 'WKCookieWebView'
 end
