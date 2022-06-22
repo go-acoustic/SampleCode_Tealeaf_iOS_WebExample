@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Tua-cy-gEo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Tua-cy-gEo">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,12 +48,22 @@
                                     <segue destination="3ZT-lc-qz1" kind="push" id="wp1-mW-zAM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbs-di-hnX">
+                                <rect key="frame" x="112" y="420" width="151" height="30"/>
+                                <state key="normal" title="WKCookieWebView"/>
+                                <connections>
+                                    <segue destination="56a-qQ-0AB" kind="push" id="q92-Me-MwX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AEf-rX-Cwt" firstAttribute="top" secondItem="A5s-XM-bRY" secondAttribute="bottom" constant="19" id="DHo-p4-WUb"/>
+                            <constraint firstItem="Nbs-di-hnX" firstAttribute="top" secondItem="AEf-rX-Cwt" secondAttribute="bottom" constant="16" id="Rf4-r6-LDg"/>
                             <constraint firstItem="AEf-rX-Cwt" firstAttribute="leading" secondItem="2ho-Be-arj" secondAttribute="leadingMargin" constant="96" id="SUn-76-7Uf"/>
+                            <constraint firstItem="Nbs-di-hnX" firstAttribute="leading" secondItem="AEf-rX-Cwt" secondAttribute="leading" id="SYk-Nu-Fhm"/>
                             <constraint firstItem="25C-or-edf" firstAttribute="centerX" secondItem="2ho-Be-arj" secondAttribute="centerX" id="doH-J4-I8x"/>
+                            <constraint firstItem="Nbs-di-hnX" firstAttribute="trailing" secondItem="AEf-rX-Cwt" secondAttribute="trailing" id="fZZ-cD-L4z"/>
                             <constraint firstItem="25C-or-edf" firstAttribute="top" secondItem="yiu-tp-sJW" secondAttribute="bottom" constant="229" id="qJf-TP-zeN"/>
                             <constraint firstItem="A5s-XM-bRY" firstAttribute="top" secondItem="25C-or-edf" secondAttribute="bottom" constant="23" id="qoC-4d-exm"/>
                             <constraint firstItem="AEf-rX-Cwt" firstAttribute="centerX" secondItem="A5s-XM-bRY" secondAttribute="centerX" id="v2R-ni-0Dq"/>
@@ -146,6 +156,25 @@
             </objects>
             <point key="canvasLocation" x="348" y="463"/>
         </scene>
+        <!--Cookie Web View Controller-->
+        <scene sceneID="gLR-oD-hPQ">
+            <objects>
+                <viewController id="56a-qQ-0AB" customClass="WKCookieWebViewController" customModule="WebExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eLL-pV-15A"/>
+                        <viewControllerLayoutGuide type="bottom" id="pFy-vU-674"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wSY-aL-ZaR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RDG-3u-yLN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egH-dM-xMl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="1261"/>
+        </scene>
         <!--Mixed View Controller-->
         <scene sceneID="j14-TR-gvL">
             <objects>
@@ -199,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JjT-eg-cZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="348" y="1167.1664167916042"/>
+            <point key="canvasLocation" x="-863" y="1261"/>
         </scene>
     </scenes>
     <resources>
