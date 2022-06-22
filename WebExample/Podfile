@@ -10,3 +10,11 @@ target 'WebExample' do
   pod 'TealeafDebug'
   pod 'WKCookieWebView'
 end
+
+target 'WebExampleLocal' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for WebExample
+  pod 'WKCookieWebView'
+end
