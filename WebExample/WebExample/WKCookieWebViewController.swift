@@ -17,7 +17,7 @@ import UIKit
 import WebKit
 import WKCookieWebView
 
-class WKCookieWebViewController: UIViewController {
+class WKCookieWebViewController: UIViewController, WKNavigationDelegate {
 
     lazy var webView: WKCookieWebView = {
         let webView: WKCookieWebView = WKCookieWebView(frame: self.view.bounds)
@@ -68,9 +68,6 @@ class WKCookieWebViewController: UIViewController {
         }
         print("=================================================")
     }
-}
-
-extension WKCookieWebViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         print("ViewController.decidePolicyFor.Action")
@@ -89,5 +86,9 @@ extension WKCookieWebViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         print("didFailProvisionalNavigation.error : \(error)")
     }
+    
+//    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+//        print("Finished navigating to url \(String(describing: webView.url))");
+//    }
     
 }
