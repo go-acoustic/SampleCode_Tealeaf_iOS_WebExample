@@ -81,7 +81,7 @@
             "CaptureLayoutDelay": 500,
             "ScreenShot": false,
             "NumberOfWebViews": 1,
-            "CaptureScreenshotOn": 2
+            "CaptureScreenshotOn": 0
         }
     },
     "AppendMapIds": {
