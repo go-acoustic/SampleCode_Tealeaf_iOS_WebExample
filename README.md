@@ -26,7 +26,7 @@ For SDK prerequisites and documentation, please refer to the SDK documentation [
 
 Clone the sample app code from git hub location
 
-`git clone https://github.com/acoustic-analytics/SampleCode_Tealeaf_iOS_WebExample.git`
+`git clone https://github.com/go-acoustic/SampleCode_Tealeaf_iOS_WebExample.git`
 
 Go to the sample app location
 
@@ -75,4 +75,4 @@ If you are using Debug version of Tealeaf SDK. i.e. `pod 'TealeafDebug'` , then 
 
 ## License
 
-License files can be read [here](https://github.com/acoustic-analytics/SampleCode_Tealeaf_iOS_WebExample/blob/master/Licenses/License)
+License files can be read [here](https://github.com/go-acoustic/SampleCode_Tealeaf_iOS_WebExample/blob/master/Licenses/License)
