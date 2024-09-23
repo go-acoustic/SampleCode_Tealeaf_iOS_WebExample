@@ -14,7 +14,7 @@
 //
 
 import UIKit
-import WebKit
+@preconcurrency import WebKit
 import WKCookieWebView
 
 class WKCookieWebViewController: UIViewController, WKNavigationDelegate {
@@ -87,8 +87,8 @@ class WKCookieWebViewController: UIViewController, WKNavigationDelegate {
         print("didFailProvisionalNavigation.error : \(error)")
     }
     
-//    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-//        print("Finished navigating to url \(String(describing: webView.url))");
-//    }
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        print("Finished navigating to url \(String(describing: webView.url))");
+    }
     
 }
