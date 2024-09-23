@@ -32,9 +32,9 @@ Go to the sample app location
 
 `cd WebExample`
 
-Also note the platform in the Podfile iOS 12
+Also note the platform in the Podfile iOS 13 which is our library minimal version:
 
-`platform :ios, '12.0'`
+`platform :ios, '13.0'`
 
 Note that use_frameworks is commented
 
